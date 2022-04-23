@@ -25,6 +25,7 @@ class Leaf:
         self._score = 0.0
         self._result_class = random.randrange(num_of_classes)
         self._num_of_classes = num_of_classes
+        self._depthTree = 0
 
     # Getter and Setter Method
     def set_score(self, score):
@@ -38,6 +39,12 @@ class Leaf:
 
     def get_result(self):
         return self._result
+
+    def set_depthTree(self, depthTree):
+        self._depthTree = depthTree
+
+    def get_depthTree(self):
+        return self._depthTree
 
 
 #rule is the class used to chose how we do the decision#
@@ -72,6 +79,7 @@ class Decision():
         self._children = []
         self._rule=rule
         self._score=0.0
+        self._depthTree = 0
 
     #Getter and Setter
     def set_score(self,score):
@@ -80,6 +88,14 @@ class Decision():
     def get_score(self):
         return self._score
 
+    def set_depthTree(self, depthTree):
+        self._depthTree = depthTree
+
+    def get_depthTree(self):
+        return self._depthTree
+
     def add_child(self, new_child):
         self._children.append(new_child)
+
+
 
