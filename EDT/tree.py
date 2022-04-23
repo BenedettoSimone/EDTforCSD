@@ -6,6 +6,17 @@
               - it can have 2 type of childrens : Decision or Leafs
 """
 import random
+from enum import Enum
+
+
+class NodesTypes(Enum):
+    LEAF = 0
+    DECISION = 1
+
+LEFT_CHILD = 0
+RIGH_CHILD = 1
+
+
 
 
 class Leaf:
@@ -52,3 +63,23 @@ class Rule:
 
     def get_treshold(self):
         return self._treshold
+
+
+class Decision():
+    #contructor#
+    def __init__(self,rule):
+        #contain the childs of the node
+        self._children = []
+        self._rule=rule
+        self._score=0.0
+
+    #Getter and Setter
+    def set_score(self,score):
+        self._score = score
+
+    def get_score(self):
+        return self._score
+
+    def add_child(self, new_child):
+        self._children.append(new_child)
+
