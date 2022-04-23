@@ -27,3 +27,28 @@ class Leaf:
 
     def get_result(self):
         return self._result
+
+
+#rule is the class used to chose how we do the decision#
+class Rule:
+    def __init__(self,num_features,min_max):
+        #chose a random number in number of feature to make a decision on this feature
+        self._index=random.randrange(num_features)
+
+        #computing the treshold
+        self._treshold=random.uniform(min_max[self._index][0],min_max[self._index][1])
+        self._num_features=num_features
+        self._min_max=min_max
+
+    #Getter and Setter
+    def set_index(self,index):
+        self._index=index
+
+    def set_treshold(self,treshold):
+        self._treshold=treshold
+
+    def get_index(self):
+        return self._index
+
+    def get_treshold(self):
+        return self._treshold
