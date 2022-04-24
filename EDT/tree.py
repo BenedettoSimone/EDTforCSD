@@ -36,14 +36,17 @@ class Leaf:
     def get_score(self):
         return self._score
 
-    def get_result(self):
-        return self._result
+    def get_result(self,data):
+        return self._result_class
 
     def set_height_tree(self, height_tree):
         self._height_tree = height_tree
 
     def get_height_tree(self):
         return self._height_tree
+
+
+
 
 
 # rule is the class used to chose how we do the decision#
@@ -69,6 +72,13 @@ class Rule:
 
     def get_treshold(self):
         return self._treshold
+
+    def pass_rule(self, feature_test):
+        try:
+            #check if the feature respect the rule
+            return feature_test[self._index] >= self._treshold
+        except RecursionError:
+            return 0
 
 
 class Decision():
@@ -98,3 +108,11 @@ class Decision():
 
     def get_children(self):
         return self._children
+
+
+    def get_result(self, data):
+        if self._rule.pass_rule(data):
+            return self._children[LEFT_CHILD].get_result(data)
+        else:
+            return self._children[RIGH_CHILD].get_result(data)
+

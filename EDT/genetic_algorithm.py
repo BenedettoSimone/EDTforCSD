@@ -26,6 +26,12 @@ class GeneticAlgorithm:
 
         # generate starting population
         population = self.__create_starting_population()
+        print(population)
+        for pop in population:
+            print(pop)
+            print(pop.get_height_tree())
+            print(pop.get_score())
+            print("===================================")
 
         # find best individual to see progress
         '''
@@ -74,20 +80,21 @@ class GeneticAlgorithm:
 
     # function that allow us to evaluate a tree
     def __evaluate_tree(self, tree):
-        # compute a fitness score by approriately weighting accuracy and depth
-        # lower the number, the better
+        # compute a fitness score by approriately weighting accuracy and height
+
         alpha1 = 0.99  # penalty for misclassification
         alpha2 = 0.01  # penalty for large trees
 
         # predicted label
-        Y_pred = np.apply_along_axis(tree.pred, axis=1, arr=self._X_train)
+        Y_pred_train = np.apply_along_axis(tree.get_result, axis=1, arr=self._X_train)
 
-        accuracy = accuracy_score(self._y_train, Y_pred)
-        # TO DO DEFINE DEPTH SCORE
-        depth_score = 1
+        accuracy = accuracy_score(self._y_train, Y_pred_train)
+        print("accuracy",accuracy)
+        #define height score
+        height_score = 1 - tree.get_height_tree()
 
-        fitness_score = (alpha1 * accuracy) + (alpha2 * (depth_score))
+        fitness_score = (alpha1 * accuracy) + (alpha2 * height_score)
 
         tree.set_score(fitness_score)
-        print(self._Y_train)
-        print(Y_pred)
+        print(self._y_train)
+        print(Y_pred_train)
