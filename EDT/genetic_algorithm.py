@@ -12,7 +12,7 @@ SIZE_MATING_POOL = 0.2
 
 class GeneticAlgorithm:
     # constructor
-    def __init__(self, population_size, n_epochs, min_depth, max_depth):
+    def __init__(self, population_size, n_epochs, min_depth, max_depth,log_file):
         self._population_size = population_size
         self._n_epochs = n_epochs
         self._X_train = None
@@ -22,6 +22,7 @@ class GeneticAlgorithm:
         self._num_of_classes = None
         self._num_features = None
         self._min_max = None
+        self._log_file=log_file
 
     def fit(self, X_train, y_train, stop_after_no_progress):
         self._X_train = X_train.to_numpy()
@@ -32,9 +33,9 @@ class GeneticAlgorithm:
 
         # generate starting population
         population = self.__create_starting_population()
-        print(population)
+
         for pop in population:
-            print(pop)
+
             print(pop.get_height_tree())
             print(pop.get_score())
             print("===================================")
@@ -55,6 +56,16 @@ class GeneticAlgorithm:
 
                 new_child = self.__crossover(mating_pool)
                 next_population.append(new_child)
+
+
+
+
+            for i in next_population:
+                if self._log_file is not None:
+                   self._log_file.write(
+                            i.__str__(feature_names=X_train.columns.values.tolist(),
+                                              class_names=["NO complex class","Complex class"]))
+
 
 
 

@@ -7,6 +7,7 @@
 """
 import random
 from enum import Enum
+import colorama
 
 
 class NodesTypes(Enum):
@@ -47,6 +48,10 @@ class Leaf:
 
     def copy_subtree(self):
         return self
+
+    def __str__(self,level=0,feature_names=None,class_names=None):
+
+        return '{}{}{} Class: {}\n'.format('|','\t|' * (level-1),'--$ ', get_name_from_dict(self._result_class,class_names))
 
 
 # rule is the class used to chose how we do the decision#
@@ -142,3 +147,16 @@ class Decision:
                 return self._children[LEFT_CHILD].paste_subtree(sub_tree)
             else:
                 return self._children[RIGHT_CHILD].paste_subtree(sub_tree)
+
+    def __str__(self, level=0, feature_names=None, class_names=None):
+        index=self._rule.get_index()
+        threshold=self._rule.get_treshold()
+        ret = '{}{}{}{}>={}\n'.format('|','\t|' * (level-1),'--- ',get_name_from_dict(index, feature_names), threshold)
+        ret += self._children[LEFT_CHILD].__str__(level + 1, feature_names, class_names) +self._children[RIGHT_CHILD].__str__(level + 1, feature_names, class_names)
+        return ret
+
+def get_name_from_dict(index, dict = None):
+    if dict is None:
+        return index
+    else:
+        return dict[index]
