@@ -10,14 +10,6 @@ def generate_random_tree(min_depth, max_depth, num_of_classes, num_features, min
     if min_depth <= 0:
         raise ValueError('min_depth must be at least 1')
     else:
-        # choose random if the next node will be a Decision or a Leaf
-        node_type = random.choices(list(NodesTypes))[0]
-
-        if node_type is NodesTypes.LEAF:
-            root = Leaf(num_of_classes)
-            root.set_height_tree(1)
-
-        elif node_type is NodesTypes.DECISION:
             rule = Rule(num_features, min_max)
             root = Decision(rule)
 
@@ -33,8 +25,6 @@ def generate_random_tree(min_depth, max_depth, num_of_classes, num_features, min
             root.set_height_tree(height)
             print("Tree height", root.get_height_tree())
 
-        else:
-            raise ValueError('Enum type error: {}'.format(type))
     return root
 
 
