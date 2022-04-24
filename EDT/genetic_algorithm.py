@@ -1,8 +1,12 @@
+import math
+
 import numpy as np
 from sklearn.metrics import accuracy_score
 
 from EDT.generate_random_tree import generate_random_tree
 
+
+SIZE_MATING_POOL=0.2
 
 class GeneticAlgorithm:
     # constructor
@@ -34,14 +38,24 @@ class GeneticAlgorithm:
             print("===================================")
 
         # find best individual to see progress
-        '''
-        repeat for num_epochs
-            generate new population with selection, crossover and mutation
-            find best individual
-            compare it with current best individuals
-            exit with stopping condition (>num_epoch, >epoch_no_progress
-        return all best individuals 
-        '''
+        best_tree=self.__find_best(population)
+
+        for epoch in range (self._n_epochs):
+            #Selection
+            mating_pool = self.__roulette_wheel(population)
+            print("epoch",epoch,"  -- MATING_POOL",mating_pool)
+
+
+
+
+            '''
+            repeat for num_epochs
+                generate new population with selection, crossover and mutation
+                find best individual
+                compare it with current best individuals
+                exit with stopping condition (>num_epoch, >epoch_no_progress
+            return all best individuals 
+            '''
 
     # function to get useful information from dataset
     def __process_data(self):
@@ -94,7 +108,37 @@ class GeneticAlgorithm:
         height_score = 1 - tree.get_height_tree()
 
         fitness_score = (alpha1 * accuracy) + (alpha2 * height_score)
+        if fitness_score<0:
+            fitness_score=0
 
         tree.set_score(fitness_score)
         print(self._y_train)
         print(Y_pred_train)
+        print("FITNESS",fitness_score)
+
+    def __find_best(self, population):
+        population.sort(key=self.__get_tree_score, reverse=True)
+        return population[0]
+
+    def __get_tree_score(self,tree):
+        return tree.get_score()
+
+    def __roulette_wheel(self,population):
+
+        rotation=math.ceil(len(population) * SIZE_MATING_POOL)
+        mating_pool=[]
+        for i in range (rotation):
+            # Computes the totality of the population fitness
+            population_fitness = sum([tree.get_score() for tree in population])
+            # Computes for each individual the probability
+            selection_probabilities = [tree.get_score() / population_fitness for tree in population]
+            # Select one individual based on probabilities
+            mating_pool.append(population[np.random.choice(len(population), p=selection_probabilities)])
+        return mating_pool
+
+
+
+
+
+
+
