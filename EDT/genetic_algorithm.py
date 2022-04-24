@@ -1,12 +1,14 @@
 import math
+from random import randrange
+import random
 
 import numpy as np
 from sklearn.metrics import accuracy_score
 
 from EDT.generate_random_tree import generate_random_tree
 
+SIZE_MATING_POOL = 0.2
 
-SIZE_MATING_POOL=0.2
 
 class GeneticAlgorithm:
     # constructor
@@ -38,13 +40,21 @@ class GeneticAlgorithm:
             print("===================================")
 
         # find best individual to see progress
-        best_tree=self.__find_best(population)
+        best_tree = self.__find_best(population)
 
-        for epoch in range (self._n_epochs):
-            #Selection
+        epoch_without_progress = 0
+        next_population = []
+        for epoch in range(self._n_epochs):
+            # Selection with roulette wheel
             mating_pool = self.__roulette_wheel(population)
-            print("epoch",epoch,"  -- MATING_POOL",mating_pool)
+            print("epoch", epoch, "  -- MATING_POOL", mating_pool)
 
+            next_population = mating_pool
+
+            for i in range(self._population_size - len(mating_pool)):
+
+                new_child = self.__crossover(mating_pool)
+                next_population.append(new_child)
 
 
 
@@ -103,31 +113,31 @@ class GeneticAlgorithm:
         Y_pred_train = np.apply_along_axis(tree.get_result, axis=1, arr=self._X_train)
 
         accuracy = accuracy_score(self._y_train, Y_pred_train)
-        print("accuracy",accuracy)
-        #define height score
+        print("accuracy", accuracy)
+        # define height score
         height_score = 1 - tree.get_height_tree()
 
         fitness_score = (alpha1 * accuracy) + (alpha2 * height_score)
-        if fitness_score<0:
-            fitness_score=0
+        if fitness_score < 0:
+            fitness_score = 0
 
         tree.set_score(fitness_score)
         print(self._y_train)
         print(Y_pred_train)
-        print("FITNESS",fitness_score)
+        print("FITNESS", fitness_score)
 
     def __find_best(self, population):
         population.sort(key=self.__get_tree_score, reverse=True)
         return population[0]
 
-    def __get_tree_score(self,tree):
+    def __get_tree_score(self, tree):
         return tree.get_score()
 
-    def __roulette_wheel(self,population):
+    def __roulette_wheel(self, population):
 
-        rotation=math.ceil(len(population) * SIZE_MATING_POOL)
-        mating_pool=[]
-        for i in range (rotation):
+        rotation = math.ceil(len(population) * SIZE_MATING_POOL)
+        mating_pool = []
+        for i in range(rotation):
             # Computes the totality of the population fitness
             population_fitness = sum([tree.get_score() for tree in population])
             # Computes for each individual the probability
@@ -136,9 +146,26 @@ class GeneticAlgorithm:
             mating_pool.append(population[np.random.choice(len(population), p=selection_probabilities)])
         return mating_pool
 
+    def __crossover(self, mating_pool):
 
+        first_tree = None
+        second_tree = None
 
+        if len(mating_pool) < 2:
+            first_tree = mating_pool[0]
+            second_tree = first_tree
 
+        else:
+            index_first_tree = randrange(len(mating_pool))
 
+            # exclude index_first_tree from generation
+            index_second_tree = random.choice(
+                list(set([x for x in range(0, len(mating_pool))]) - set([index_first_tree])))
 
+            first_tree = mating_pool[index_first_tree]
+            second_tree = mating_pool[index_second_tree]
 
+        first_tree.paste_subtree(second_tree.copy_subtree())
+        self.__evaluate_tree(first_tree)
+
+        return first_tree

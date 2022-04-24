@@ -15,7 +15,7 @@ class NodesTypes(Enum):
 
 
 LEFT_CHILD = 0
-RIGH_CHILD = 1
+RIGHT_CHILD = 1
 
 
 class Leaf:
@@ -31,12 +31,12 @@ class Leaf:
         self._score = score
 
     def set_result(self, result):
-        self._result = result
+        self._result_class = result
 
     def get_score(self):
         return self._score
 
-    def get_result(self,data):
+    def get_result(self, data):
         return self._result_class
 
     def set_height_tree(self, height_tree):
@@ -45,8 +45,8 @@ class Leaf:
     def get_height_tree(self):
         return self._height_tree
 
-
-
+    def copy_subtree(self):
+        return self
 
 
 # rule is the class used to chose how we do the decision#
@@ -75,13 +75,13 @@ class Rule:
 
     def pass_rule(self, feature_test):
         try:
-            #check if the feature respect the rule
+            # check if the feature respect the rule
             return feature_test[self._index] >= self._treshold
         except RecursionError:
             return 0
 
 
-class Decision():
+class Decision:
     # contructor#
     def __init__(self, rule):
         # contain the childs of the node
@@ -109,10 +109,36 @@ class Decision():
     def get_children(self):
         return self._children
 
-
     def get_result(self, data):
         if self._rule.pass_rule(data):
             return self._children[LEFT_CHILD].get_result(data)
         else:
-            return self._children[RIGH_CHILD].get_result(data)
+            return self._children[RIGHT_CHILD].get_result(data)
 
+    def copy_subtree(self):
+        random_num = random.randrange(1)
+
+        if random_num == 0:
+            return self._children[LEFT_CHILD].copy_subtree()
+        else:
+            return self._children[RIGHT_CHILD].copy_subtree()
+
+    def paste_subtree(self, sub_tree):
+
+        if isinstance(self._children[LEFT_CHILD], Leaf) and isinstance(self._children[RIGHT_CHILD], Leaf):
+            child_type = random.choice([LEFT_CHILD, RIGHT_CHILD])
+            self._children[child_type] = sub_tree
+
+        elif isinstance(self._children[LEFT_CHILD], Decision) and isinstance(self._children[RIGHT_CHILD], Leaf):
+            self._children[RIGHT_CHILD] = sub_tree
+
+        elif isinstance(self._children[LEFT_CHILD], Leaf) and isinstance(self._children[RIGHT_CHILD], Decision):
+            self._children[LEFT_CHILD] = sub_tree
+
+        else:
+            random_num = random.randrange(1)
+
+            if random_num == 0:
+                return self._children[LEFT_CHILD].paste_subtree(sub_tree)
+            else:
+                return self._children[RIGHT_CHILD].paste_subtree(sub_tree)
