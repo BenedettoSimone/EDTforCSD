@@ -1,4 +1,5 @@
 import math
+from copy import deepcopy
 from random import randrange
 import random
 
@@ -44,7 +45,7 @@ class GeneticAlgorithm:
 
         for epoch in range(self._n_epochs):
 
-            #execute genetic operators
+            # execute genetic operators
             population = self.__execute_genetic_operators(population)
 
             epoch_best = self.__find_best(population)
@@ -59,11 +60,14 @@ class GeneticAlgorithm:
 
             print('Epoch {} best fitness: {}'.format(epoch, self.__get_tree_score(epoch_best)))
 
+            '''
             for i in population:
                 if self._log_file is not None:
                     self._log_file.write(
                         i.__str__(feature_names=X_train.columns.values.tolist(),
-                                  class_names=["NO complex class", "Complex class"]))
+                                    class_names=["NO complex class", "Complex class"]))
+
+'''
         return best_trees
 
     # function to get useful information from dataset
@@ -112,7 +116,7 @@ class GeneticAlgorithm:
         Y_pred_train = np.apply_along_axis(tree.get_result, axis=1, arr=self._X_train)
 
         accuracy = accuracy_score(self._y_train, Y_pred_train)
-        #print("accuracy", accuracy)
+        # print("accuracy", accuracy)
         # define height score
         height_score = 1 - tree.get_height_tree()
 
@@ -123,12 +127,12 @@ class GeneticAlgorithm:
         tree.set_score(fitness_score)
         # print(self._y_train)
         # print(Y_pred_train)
-        print("FITNESS", fitness_score, "ACCURACY:",accuracy)
+        print("FITNESS", fitness_score, "ACCURACY:", accuracy)
 
     def __find_best(self, population):
         population.sort(key=self.__get_tree_score, reverse=True)
         for i in population:
-            print("FIND BEST", i.get_score())
+            print("FIND BEST", self.__get_tree_score(i))
         return population[0]
 
     def __get_tree_score(self, tree):
@@ -148,7 +152,7 @@ class GeneticAlgorithm:
             offsprings.append(new_child)
 
         print("MUTATION================")
-        #mutation
+        # mutation
         mutated_population = self.__mutation(offsprings)
 
         return mutated_population
@@ -182,8 +186,8 @@ class GeneticAlgorithm:
             index_second_tree = random.choice(
                 list(set([x for x in range(0, len(mating_pool))]) - set([index_first_tree])))
 
-            first_tree = mating_pool[index_first_tree]
-            second_tree = mating_pool[index_second_tree]
+            first_tree = deepcopy(mating_pool[index_first_tree])
+            second_tree = deepcopy(mating_pool[index_second_tree])
 
         first_tree.paste_subtree(second_tree.copy_subtree())
         self.__evaluate_tree(first_tree)
@@ -194,10 +198,14 @@ class GeneticAlgorithm:
 
         mutated_population = []
         # mutation
+        print(len(offsprings))
         for tree in offsprings:
-            child = tree
-            child.mutate(self._num_features, self._min_max)
-            self.__evaluate_tree(child)
-            mutated_population.append(child)
+            tree.mutate(self._num_features, self._min_max)
+            self.__evaluate_tree(tree)
+            print("-------", tree)
+            mutated_population.append(tree)
+
+        for i in mutated_population:
+            print("------->>>>>", i)
 
         return mutated_population

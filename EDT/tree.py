@@ -7,6 +7,7 @@
 """
 import random
 from enum import Enum
+from copy import deepcopy
 
 
 class NodesTypes(Enum):
@@ -51,9 +52,17 @@ class Leaf:
     def mutate(self, num_features, min_max):
         self._result_class = random.randrange(self._num_of_classes)
 
+
+    '''
     def __str__(self, level=0, feature_names=None, class_names=None):
         return '{}{}{} Class: {}\n'.format('|', '\t|' * (level - 1), '--$ ', class_names[self._result_class])
+'''
 
+    def __deepcopy__(self, memodict={}):
+        leaf = Leaf(deepcopy(self._num_of_classes))
+        leaf.set_result(deepcopy(self._result_class))
+        leaf.set_score(deepcopy(self._score))
+        return leaf
 
 # rule is the class used to chose how we do the decision#
 class Rule:
@@ -160,6 +169,7 @@ class Decision:
             # mutate random child
             self._children[random.choice([LEFT_CHILD, RIGHT_CHILD])].mutate()
 
+    '''
     def __str__(self, level=0, feature_names=None, class_names=None):
         index = self._rule.get_index()
         threshold = self._rule.get_treshold()
@@ -167,3 +177,11 @@ class Decision:
         text += self._children[LEFT_CHILD].__str__(level + 1, feature_names, class_names) + self._children[
             RIGHT_CHILD].__str__(level + 1, feature_names, class_names)
         return text
+'''
+
+    def __deepcopy__(self, memodict={}):
+        decision = Decision(deepcopy(self._rule))
+        decision.add_child(deepcopy(self._children[LEFT_CHILD]))
+        decision.add_child(deepcopy(self._children[RIGHT_CHILD]))
+        decision.set_score(deepcopy(self._score))
+        return decision
