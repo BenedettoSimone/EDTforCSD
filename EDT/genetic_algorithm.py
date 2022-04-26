@@ -32,42 +32,22 @@ class GeneticAlgorithm:
         self.__process_data()
 
         # generate starting population
-        print("STARTING POP")
+        print("STARTING POPULATION")
         population = self.__create_starting_population()
         best_trees = []
 
-        '''
-         for pop in population:
-            print(pop.get_height_tree())
-            print(pop.get_score())
-            print("===================================")
-        '''
-
-
         # find best individual to see progress
         best_tree = self.__find_best(population)
+        print("BEST TREE with ", self.__get_tree_score(best_tree))
 
         epoch_without_progress = 0
-        next_population = []
+
         for epoch in range(self._n_epochs):
-            # Selection with roulette wheel
-            mating_pool = self.__roulette_wheel(population)
-            print("epoch", epoch, "  -- MATING_POOL", mating_pool)
 
-            # crossover
-            for i in range(self._population_size):
-                new_child = self.__crossover(mating_pool)
-                next_population.append(new_child)
+            #execute genetic operators
+            population = self.__execute_genetic_operators(population)
 
-            final_population = []
-            # mutation
-            for tree in next_population:
-                child = tree
-                child.mutate(self._num_features, self._min_max)
-                self.__evaluate_tree(child)
-                final_population.append(child)
-
-            epoch_best = self.__find_best(final_population)
+            epoch_best = self.__find_best(population)
             if self.__get_tree_score(epoch_best) < self.__get_tree_score(best_tree):
                 epoch_without_progress += 1
                 if epoch_without_progress >= stop_after_no_progress:
@@ -79,20 +59,12 @@ class GeneticAlgorithm:
 
             print('Epoch {} best fitness: {}'.format(epoch, self.__get_tree_score(epoch_best)))
 
-            for i in final_population:
+            for i in population:
                 if self._log_file is not None:
                     self._log_file.write(
                         i.__str__(feature_names=X_train.columns.values.tolist(),
                                   class_names=["NO complex class", "Complex class"]))
         return best_trees
-        '''
-        repeat for num_epochs
-            generate new population with selection, crossover and mutation
-            find best individual
-            compare it with current best individuals
-            exit with stopping condition (>num_epoch, >epoch_no_progress
-        return all best individuals 
-        '''
 
     # function to get useful information from dataset
     def __process_data(self):
@@ -140,7 +112,7 @@ class GeneticAlgorithm:
         Y_pred_train = np.apply_along_axis(tree.get_result, axis=1, arr=self._X_train)
 
         accuracy = accuracy_score(self._y_train, Y_pred_train)
-        print("accuracy", accuracy)
+        #print("accuracy", accuracy)
         # define height score
         height_score = 1 - tree.get_height_tree()
 
@@ -149,9 +121,9 @@ class GeneticAlgorithm:
             fitness_score = 0
 
         tree.set_score(fitness_score)
-        #print(self._y_train)
-        #print(Y_pred_train)
-        print("FITNESS", fitness_score)
+        # print(self._y_train)
+        # print(Y_pred_train)
+        print("FITNESS", fitness_score, "ACCURACY:",accuracy)
 
     def __find_best(self, population):
         population.sort(key=self.__get_tree_score, reverse=True)
@@ -161,6 +133,25 @@ class GeneticAlgorithm:
 
     def __get_tree_score(self, tree):
         return tree.get_score()
+
+    def __execute_genetic_operators(self, population):
+
+        offsprings = []
+
+        # Selection with roulette wheel
+        mating_pool = self.__roulette_wheel(population)
+
+        print("CROSSOVER=========")
+        # crossover
+        for i in range(self._population_size):
+            new_child = self.__crossover(mating_pool)
+            offsprings.append(new_child)
+
+        print("MUTATION================")
+        #mutation
+        mutated_population = self.__mutation(offsprings)
+
+        return mutated_population
 
     def __roulette_wheel(self, population):
 
@@ -198,3 +189,15 @@ class GeneticAlgorithm:
         self.__evaluate_tree(first_tree)
 
         return first_tree
+
+    def __mutation(self, offsprings):
+
+        mutated_population = []
+        # mutation
+        for tree in offsprings:
+            child = tree
+            child.mutate(self._num_features, self._min_max)
+            self.__evaluate_tree(child)
+            mutated_population.append(child)
+
+        return mutated_population
