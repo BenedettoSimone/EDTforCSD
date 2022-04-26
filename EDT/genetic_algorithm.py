@@ -12,7 +12,7 @@ SIZE_MATING_POOL = 0.2
 
 class GeneticAlgorithm:
     # constructor
-    def __init__(self, population_size, n_epochs, min_depth, max_depth,log_file):
+    def __init__(self, population_size, n_epochs, min_depth, max_depth, log_file):
         self._population_size = population_size
         self._n_epochs = n_epochs
         self._X_train = None
@@ -22,7 +22,7 @@ class GeneticAlgorithm:
         self._num_of_classes = None
         self._num_features = None
         self._min_max = None
-        self._log_file=log_file
+        self._log_file = log_file
 
     def fit(self, X_train, y_train, stop_after_no_progress):
         self._X_train = X_train.to_numpy()
@@ -32,13 +32,17 @@ class GeneticAlgorithm:
         self.__process_data()
 
         # generate starting population
+        print("STARTING POP")
         population = self.__create_starting_population()
+        best_trees = []
 
-        for pop in population:
-
+        '''
+         for pop in population:
             print(pop.get_height_tree())
             print(pop.get_score())
             print("===================================")
+        '''
+
 
         # find best individual to see progress
         best_tree = self.__find_best(population)
@@ -50,33 +54,45 @@ class GeneticAlgorithm:
             mating_pool = self.__roulette_wheel(population)
             print("epoch", epoch, "  -- MATING_POOL", mating_pool)
 
-            next_population = mating_pool
-
-            for i in range(self._population_size - len(mating_pool)):
-
+            # crossover
+            for i in range(self._population_size):
                 new_child = self.__crossover(mating_pool)
                 next_population.append(new_child)
 
+            final_population = []
+            # mutation
+            for tree in next_population:
+                child = tree
+                child.mutate(self._num_features, self._min_max)
+                self.__evaluate_tree(child)
+                final_population.append(child)
 
+            epoch_best = self.__find_best(final_population)
+            if self.__get_tree_score(epoch_best) < self.__get_tree_score(best_tree):
+                epoch_without_progress += 1
+                if epoch_without_progress >= stop_after_no_progress:
+                    break
+            else:
+                best_tree = epoch_best
 
+            best_trees.append(epoch_best)
 
-            for i in next_population:
+            print('Epoch {} best fitness: {}'.format(epoch, self.__get_tree_score(epoch_best)))
+
+            for i in final_population:
                 if self._log_file is not None:
-                   self._log_file.write(
-                            i.__str__(feature_names=X_train.columns.values.tolist(),
-                                              class_names=["NO complex class","Complex class"]))
-
-
-
-
-            '''
-            repeat for num_epochs
-                generate new population with selection, crossover and mutation
-                find best individual
-                compare it with current best individuals
-                exit with stopping condition (>num_epoch, >epoch_no_progress
-            return all best individuals 
-            '''
+                    self._log_file.write(
+                        i.__str__(feature_names=X_train.columns.values.tolist(),
+                                  class_names=["NO complex class", "Complex class"]))
+        return best_trees
+        '''
+        repeat for num_epochs
+            generate new population with selection, crossover and mutation
+            find best individual
+            compare it with current best individuals
+            exit with stopping condition (>num_epoch, >epoch_no_progress
+        return all best individuals 
+        '''
 
     # function to get useful information from dataset
     def __process_data(self):
@@ -133,12 +149,14 @@ class GeneticAlgorithm:
             fitness_score = 0
 
         tree.set_score(fitness_score)
-        print(self._y_train)
-        print(Y_pred_train)
+        #print(self._y_train)
+        #print(Y_pred_train)
         print("FITNESS", fitness_score)
 
     def __find_best(self, population):
         population.sort(key=self.__get_tree_score, reverse=True)
+        for i in population:
+            print("FIND BEST", i.get_score())
         return population[0]
 
     def __get_tree_score(self, tree):

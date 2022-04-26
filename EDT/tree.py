@@ -7,7 +7,6 @@
 """
 import random
 from enum import Enum
-import colorama
 
 
 class NodesTypes(Enum):
@@ -49,9 +48,11 @@ class Leaf:
     def copy_subtree(self):
         return self
 
-    def __str__(self,level=0,feature_names=None,class_names=None):
+    def mutate(self, num_features, min_max):
+        self._result_class = random.randrange(self._num_of_classes)
 
-        return '{}{}{} Class: {}\n'.format('|','\t|' * (level-1),'--$ ', get_name_from_dict(self._result_class,class_names))
+    def __str__(self, level=0, feature_names=None, class_names=None):
+        return '{}{}{} Class: {}\n'.format('|', '\t|' * (level - 1), '--$ ', class_names[self._result_class])
 
 
 # rule is the class used to chose how we do the decision#
@@ -148,15 +149,21 @@ class Decision:
             else:
                 return self._children[RIGHT_CHILD].paste_subtree(sub_tree)
 
-    def __str__(self, level=0, feature_names=None, class_names=None):
-        index=self._rule.get_index()
-        threshold=self._rule.get_treshold()
-        ret = '{}{}{}{}>={}\n'.format('|','\t|' * (level-1),'--- ',get_name_from_dict(index, feature_names), threshold)
-        ret += self._children[LEFT_CHILD].__str__(level + 1, feature_names, class_names) +self._children[RIGHT_CHILD].__str__(level + 1, feature_names, class_names)
-        return ret
+    def mutate(self, num_features, min_max):
 
-def get_name_from_dict(index, dict = None):
-    if dict is None:
-        return index
-    else:
-        return dict[index]
+        random_num = random.randrange(1)
+        if random_num == 0:
+            # change rule
+            new_rule = Rule(num_features, min_max)
+            self._rule = new_rule
+        else:
+            # mutate random child
+            self._children[random.choice([LEFT_CHILD, RIGHT_CHILD])].mutate()
+
+    def __str__(self, level=0, feature_names=None, class_names=None):
+        index = self._rule.get_index()
+        threshold = self._rule.get_treshold()
+        text = '{}{}{}{}>={}\n'.format('|', '\t|' * (level - 1), '--- ', feature_names[index], threshold)
+        text += self._children[LEFT_CHILD].__str__(level + 1, feature_names, class_names) + self._children[
+            RIGHT_CHILD].__str__(level + 1, feature_names, class_names)
+        return text

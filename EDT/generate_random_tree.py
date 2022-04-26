@@ -21,9 +21,9 @@ def generate_random_tree(min_depth, max_depth, num_of_classes, num_features, min
             children = root.get_children()
             height = max(children[0].get_height_tree(), children[1].get_height_tree())
 
-            print("Compute max", children[0].get_height_tree(), children[1].get_height_tree())
+            #print("Compute max", children[0].get_height_tree(), children[1].get_height_tree())
             root.set_height_tree(height)
-            print("Tree height", root.get_height_tree())
+            #print("Tree height", root.get_height_tree())
 
     return root
 
@@ -34,7 +34,7 @@ def tree_node(depth, min_depth, max_depth, num_of_classes, num_features, min_max
     if depth == max_depth:
         node = Leaf(num_of_classes)
         node.set_height_tree(1)
-        print("1-Leaf height", node.get_height_tree())
+        #print("1-Leaf height", node.get_height_tree())
 
     elif depth < min_depth:
 
@@ -46,9 +46,9 @@ def tree_node(depth, min_depth, max_depth, num_of_classes, num_features, min_max
         children = node.get_children()
         height = 1 + max(children[0].get_height_tree(), children[1].get_height_tree())
 
-        print("1-Compute max", children[0].get_height_tree(), children[1].get_height_tree() )
+        #print("1-Compute max", children[0].get_height_tree(), children[1].get_height_tree() )
         node.set_height_tree(height)
-        print("1-Decision height", node.get_height_tree())
+        #print("1-Decision height", node.get_height_tree())
 
     elif min_depth <= depth < max_depth:
 
@@ -58,7 +58,7 @@ def tree_node(depth, min_depth, max_depth, num_of_classes, num_features, min_max
         if node_type is NodesTypes.LEAF:
             node = Leaf(num_of_classes)
             node.set_height_tree(1)
-            print("2-Leaf height", node.get_height_tree())
+            #print("2-Leaf height", node.get_height_tree())
 
         elif node_type is NodesTypes.DECISION:
             rule = Rule(num_features, min_max)
@@ -69,9 +69,9 @@ def tree_node(depth, min_depth, max_depth, num_of_classes, num_features, min_max
 
             children = node.get_children()
             height = 1 + max(children[0].get_height_tree(), children[1].get_height_tree())
-            print("2-Compute max", children[0].get_height_tree(), children[1].get_height_tree())
+            #print("2-Compute max", children[0].get_height_tree(), children[1].get_height_tree())
             node.set_height_tree(height)
-            print("2-Decision height", node.get_height_tree())
+            #print("2-Decision height", node.get_height_tree())
 
         else:
             raise ValueError('Enum type error: {}'.format(type))
