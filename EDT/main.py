@@ -18,7 +18,7 @@ def execute_task(dataset_path, log_file):
 
     # create Genetic algorithm
 
-    genetic_algorithm = GeneticAlgorithm(10, 10, 5, 10, log_file)
+    genetic_algorithm = GeneticAlgorithm(10, 10, 5, 10)
 
     # find population of best individuals
     best_individuals = genetic_algorithm.fit(X_train, y_train, 10)
@@ -33,7 +33,7 @@ def execute_task(dataset_path, log_file):
     best_tree = best_individuals[0]
     print("\u2500" * 50)
     print("\u2500" * 50)
-    print(colorama.Fore.GREEN, "BEST TREE with fitness", get_fitness(best_individuals[0]), colorama.Fore.RESET)
+    print(colorama.Fore.GREEN, "BEST TREE with fitness", get_fitness(best_tree), colorama.Fore.RESET)
     print("\u2500" * 50)
     print("\u2500" * 50)
 
@@ -46,6 +46,15 @@ def execute_task(dataset_path, log_file):
     Y_pred_test = np.apply_along_axis(best_tree.get_result, axis=1, arr=X_test)
     accuracy_test = accuracy_score(y_test, Y_pred_test)
     print(colorama.Fore.YELLOW, "Accuracy score in TEST set ", accuracy_test, colorama.Fore.RESET)
+
+
+    if log_file is not None:
+        log_file.write("=" * 200)
+        log_file.write("\nFITNESS {}\n".format(get_fitness(best_tree)))
+        log_file.write("Accuracy score in TRAIN set {}\n".format(accuracy_train))
+        log_file.write("Accuracy score in TEST set {}\n".format(accuracy_test))
+        log_file.write("=" * 200)
+        log_file.write(best_tree.__str__(feature_names=X_train.columns.values.tolist(),class_names=["NO complex class", "Complex class"]))
 
 
 def get_fitness(tree):
