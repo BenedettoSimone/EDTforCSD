@@ -1,13 +1,17 @@
 import math
+
 from copy import deepcopy
 from random import randrange
 import random
+from typing import List, Any
 
 import numpy as np
+from tabulate import tabulate
 from sklearn.metrics import accuracy_score
 
 from EDT.generate_random_tree import generate_random_tree
 
+data_to_print = []
 SIZE_MATING_POOL = 0.2
 
 
@@ -33,13 +37,15 @@ class GeneticAlgorithm:
         self.__process_data()
 
         # generate starting population
+        print("\u2501" * 50)
         print("STARTING POPULATION")
         population = self.__create_starting_population()
+
         best_trees = []
 
         # find best individual to see progress
         best_tree = self.__find_best(population)
-        print("BEST TREE with ", self.__get_tree_score(best_tree))
+        print("BEST TREE with fitness of:", self.__get_tree_score(best_tree))
 
         epoch_without_progress = 0
 
@@ -58,7 +64,7 @@ class GeneticAlgorithm:
 
             best_trees.append(epoch_best)
 
-            print('Epoch {} best fitness: {}'.format(epoch, self.__get_tree_score(epoch_best)))
+            print('Epoch {} - best fitness: {}'.format(epoch, self.__get_tree_score(epoch_best)))
 
             '''
             for i in population:
@@ -103,6 +109,8 @@ class GeneticAlgorithm:
             self.__evaluate_tree(new_tree)
             # Adding the tree to the population
             population.append(new_tree)
+        print(tabulate(data_to_print, headers=["Fitness", "Accuracy", "Height Score"]))
+
         return population
 
     # function that allow us to evaluate a tree
@@ -127,34 +135,42 @@ class GeneticAlgorithm:
         tree.set_score(fitness_score)
         # print(self._y_train)
         # print(Y_pred_train)
-        print("FITNESS", fitness_score, "ACCURACY:", accuracy)
+        # print("FITNESS", fitness_score, "ACCURACY:", accuracy)
+        data_to_print.append([fitness_score, accuracy, height_score])
 
     def __find_best(self, population):
         population.sort(key=self.__get_tree_score, reverse=True)
-        for i in population:
-            print("FIND BEST", self.__get_tree_score(i))
         return population[0]
 
     def __get_tree_score(self, tree):
         return tree.get_score()
 
     def __execute_genetic_operators(self, population):
-
+        global data_to_print
         offsprings = []
 
         # Selection with roulette wheel
         mating_pool = self.__roulette_wheel(population)
+        data_to_print = []
 
-        print("CROSSOVER=========")
         # crossover
+        print("\u2501" * 50)
+        print("CROSSOVER")
+
         for i in range(self._population_size):
             new_child = self.__crossover(mating_pool)
             offsprings.append(new_child)
 
-        print("MUTATION================")
-        # mutation
-        mutated_population = self.__mutation(offsprings)
+        print(tabulate(data_to_print, headers=["Fitness", "Accuracy", "Height Score"]))
+        print("\u2501" * 50)
 
+        print("MUTATION")
+
+        # mutation
+        data_to_print = []
+        mutated_population = self.__mutation(offsprings)
+        print(tabulate(data_to_print, headers=["Fitness", "Accuracy", "Height Score"]))
+        print("\u2501" * 50)
         return mutated_population
 
     def __roulette_wheel(self, population):
@@ -198,14 +214,10 @@ class GeneticAlgorithm:
 
         mutated_population = []
         # mutation
-        print(len(offsprings))
+
         for tree in offsprings:
             tree.mutate(self._num_features, self._min_max)
             self.__evaluate_tree(tree)
-            print("-------", tree)
             mutated_population.append(tree)
-
-        for i in mutated_population:
-            print("------->>>>>", i)
 
         return mutated_population

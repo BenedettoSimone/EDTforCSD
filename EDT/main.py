@@ -1,5 +1,10 @@
+import colorama
+import numpy as np
 import pandas as pd
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
+
+from EDT.genetic_algorithm import GeneticAlgorithm
 
 
 def execute_task(dataset_path, log_file):
@@ -12,16 +17,39 @@ def execute_task(dataset_path, log_file):
     print("Train size:", len(X_train), ", Test size:", len(X_test))
 
     # create Genetic algorithm
-        
-    # find population of best individuals
 
+    genetic_algorithm = GeneticAlgorithm(10, 10, 5, 10, log_file)
+
+    # find population of best individuals
+    best_individuals = genetic_algorithm.fit(X_train, y_train, 10)
     # choose best individual
+    print("\u2501" * 50)
+    counter = 1
+    for i in best_individuals:
+        print("Best individual", counter, ":", get_fitness(i))
+        counter = counter + 1
+
+    best_individuals.sort(key=get_fitness, reverse=True)
+    best_tree = best_individuals[0]
+    print("\u2500" * 50)
+    print("\u2500" * 50)
+    print(colorama.Fore.GREEN, "BEST TREE with fitness", get_fitness(best_individuals[0]), colorama.Fore.RESET)
+    print("\u2500" * 50)
+    print("\u2500" * 50)
 
     # make prediction on train set
+    Y_pred_train = np.apply_along_axis(best_tree.get_result, axis=1, arr=X_train)
+    accuracy_train = accuracy_score(y_train, Y_pred_train)
+    print(colorama.Fore.MAGENTA, "Accuracy score in TRAIN set ", accuracy_train, colorama.Fore.RESET)
 
     # make prediction on test set
+    Y_pred_test = np.apply_along_axis(best_tree.get_result, axis=1, arr=X_test)
+    accuracy_test = accuracy_score(y_test, Y_pred_test)
+    print(colorama.Fore.YELLOW, "Accuracy score in TEST set ", accuracy_test, colorama.Fore.RESET)
 
-    # show results
+
+def get_fitness(tree):
+    return tree.get_score()
 
 
 if __name__ == '__main__':
