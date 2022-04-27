@@ -19,7 +19,7 @@ def generate_random_tree(min_depth, max_depth, num_of_classes, num_features, min
 
             # get children to compute height of tree
             children = root.get_children()
-            height = max(children[0].get_height_tree(), children[1].get_height_tree())
+            height = 1 + max(children[0].get_height_tree(), children[1].get_height_tree())
 
             #print("Compute max", children[0].get_height_tree(), children[1].get_height_tree())
             root.set_height_tree(height)
@@ -54,7 +54,6 @@ def tree_node(depth, min_depth, max_depth, num_of_classes, num_features, min_max
 
         # choose random if the next node will be a Decision or a Leaf
         node_type = random.choices(list(NodesTypes))[0]
-
         if node_type is NodesTypes.LEAF:
             node = Leaf(num_of_classes)
             node.set_height_tree(1)

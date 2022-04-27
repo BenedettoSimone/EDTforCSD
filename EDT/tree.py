@@ -47,7 +47,7 @@ class Leaf:
         return self._height_tree
 
     def copy_subtree(self):
-        return self
+        return deepcopy(self)
 
     def mutate(self, num_features, min_max):
         self._result_class = random.randrange(self._num_of_classes)
@@ -59,6 +59,7 @@ class Leaf:
         leaf = Leaf(deepcopy(self._num_of_classes))
         leaf.set_result(deepcopy(self._result_class))
         leaf.set_score(deepcopy(self._score))
+        leaf.set_height_tree(deepcopy(self._height_tree))
         return leaf
 
 
@@ -128,13 +129,28 @@ class Decision:
         else:
             return self._children[RIGHT_CHILD].get_result(data)
 
-    def copy_subtree(self):
-        random_num = random.randrange(1)
 
-        if random_num == 0:
-            return self._children[LEFT_CHILD].copy_subtree()
+    def copy_subtree(self):
+        print("Running")
+        choose_if_copy = random.randrange(3)
+        print("Initial choose:", choose_if_copy)
+        #don't copy current node
+        if choose_if_copy == 0 or choose_if_copy == 1:
+            print("Don't copy")
+            #choose next node
+            next_node = random.randrange(2)
+            print("next_node:", next_node)
+            if next_node == 0:
+                print("NEXT SIDE: ",type(self._children[LEFT_CHILD]))
+                self._children[LEFT_CHILD].copy_subtree()
+            else:
+                print("NEXT SIDE: ",type(self._children[RIGHT_CHILD]))
+                self._children[RIGHT_CHILD].copy_subtree()
         else:
-            return self._children[RIGHT_CHILD].copy_subtree()
+            print("Copy")
+            print(type(self))
+            return deepcopy(self)
+
 
     def paste_subtree(self, sub_tree):
 
@@ -149,7 +165,7 @@ class Decision:
             self._children[LEFT_CHILD] = sub_tree
 
         else:
-            random_num = random.randrange(1)
+            random_num = random.randrange(2)
 
             if random_num == 0:
                 return self._children[LEFT_CHILD].paste_subtree(sub_tree)
@@ -158,14 +174,14 @@ class Decision:
 
     def mutate(self, num_features, min_max):
 
-        random_num = random.randrange(1)
+        random_num = random.randrange(2)
         if random_num == 0:
             # change rule
             new_rule = Rule(num_features, min_max)
             self._rule = new_rule
         else:
             # mutate random child
-            self._children[random.choice([LEFT_CHILD, RIGHT_CHILD])].mutate()
+            self._children[random.choice([LEFT_CHILD, RIGHT_CHILD])].mutate(num_features, min_max)
 
     def __str__(self, level=0, feature_names=None, class_names=None):
         index = self._rule.get_index()
@@ -180,4 +196,5 @@ class Decision:
         decision.add_child(deepcopy(self._children[LEFT_CHILD]))
         decision.add_child(deepcopy(self._children[RIGHT_CHILD]))
         decision.set_score(deepcopy(self._score))
+        decision.set_height_tree(self._height_tree)
         return decision
