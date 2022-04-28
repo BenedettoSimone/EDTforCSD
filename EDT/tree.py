@@ -129,28 +129,18 @@ class Decision:
         else:
             return self._children[RIGHT_CHILD].get_result(data)
 
-
     def copy_subtree(self):
-        print("Running")
         choose_if_copy = random.randrange(3)
-        print("Initial choose:", choose_if_copy)
-        #don't copy current node
+        # don't copy current node
         if choose_if_copy == 0 or choose_if_copy == 1:
-            print("Don't copy")
-            #choose next node
+            # choose next node
             next_node = random.randrange(2)
-            print("next_node:", next_node)
             if next_node == 0:
-                print("NEXT SIDE: ",type(self._children[LEFT_CHILD]))
-                self._children[LEFT_CHILD].copy_subtree()
+                return self._children[LEFT_CHILD].copy_subtree()
             else:
-                print("NEXT SIDE: ",type(self._children[RIGHT_CHILD]))
-                self._children[RIGHT_CHILD].copy_subtree()
+                return self._children[RIGHT_CHILD].copy_subtree()
         else:
-            print("Copy")
-            print(type(self))
             return deepcopy(self)
-
 
     def paste_subtree(self, sub_tree):
 

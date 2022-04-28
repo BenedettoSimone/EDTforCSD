@@ -3,7 +3,6 @@ import math
 from copy import deepcopy
 from random import randrange
 import random
-from typing import List, Any
 
 import numpy as np
 from tabulate import tabulate
@@ -185,8 +184,8 @@ class GeneticAlgorithm:
         second_tree = None
 
         if len(mating_pool) < 2:
-            first_tree = mating_pool[0]
-            second_tree = first_tree
+            first_tree = deepcopy(mating_pool[0])
+            second_tree = deepcopy(first_tree)
 
         else:
             index_first_tree = randrange(len(mating_pool))
@@ -198,17 +197,11 @@ class GeneticAlgorithm:
             first_tree = deepcopy(mating_pool[index_first_tree])
             second_tree = deepcopy(mating_pool[index_second_tree])
 
-        #print("--",type(first_tree))
-        #print("--",type(second_tree))
         subtree = second_tree.copy_subtree()
-        print("TYPE SUBTREE:", type(subtree), "SIZE:", self.__compute_height(subtree))
-
-
-        #print("===============================SUBTREE", self.__compute_height(subtree))
         first_tree.paste_subtree(subtree)
 
-        #new_height = self.__compute_height(first_tree)
-        #first_tree.set_height_tree(new_height)
+        new_height = self.__compute_height(first_tree)
+        first_tree.set_height_tree(new_height)
         self.__evaluate_tree(first_tree)
 
         return first_tree
@@ -228,12 +221,9 @@ class GeneticAlgorithm:
     def __compute_height(self, tree):
 
         if isinstance(tree, Leaf):
-            print("I'm leaf", type(tree))
             return 1
         elif isinstance(tree, Decision):
-            print("I'm Decision:", type(tree))
             children = tree.get_children()
-            print("My children:", children)
             height_sx = self.__compute_height(children[0])
             height_dx = self.__compute_height(children[1])
             return max(height_sx, height_dx) + 1
