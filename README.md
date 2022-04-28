@@ -78,15 +78,29 @@ The structure of tree is available in ``EDT/tree.py``
 > The size of mating pool is 20% of population size.
 
 >#### 4. <u>Crossover</u>
-
+> To perform the crossover we combined pairs of parents.
+> To obtain a new child:
+>* we select a random node of first parent;
+>* we copy the entire subtree starting from this node;
+>* we randomly select a leaf of second parent;
+>* we replace the leaf with subtree.
 
 >#### 5. <u>Mutation</u>
+> To perform the mutation we randomly select a node:
+>* if the type of the node is a **Leaf** we change the ``result_class``;
+>* if the type is a **Decision** we change the ``Rule``.
 
 
 >#### 6. <u>Termination</u>
+> The algorithm stops when it arrives to the last iteration, or when for a determined number of iterations do not happen improvements.
 
 
 ### Run it
+To execute the program use the follow instruction in command line:
 ```
 python3 main.py
 ```
+
+## Developed by
+[Salerno Daniele](https://github.com/DanieleSalerno) <br>
+[Simone Benedetto](https://github.com/BenedettoSimone)
