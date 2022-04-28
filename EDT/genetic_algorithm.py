@@ -4,11 +4,12 @@ from copy import deepcopy
 from random import randrange
 import random
 
+import colorama
 import numpy as np
 from tabulate import tabulate
 from sklearn.metrics import accuracy_score
 
-from EDT.generate_random_tree import generate_random_tree
+from generate_random_tree import generate_random_tree
 from tree import Leaf, Decision
 
 
@@ -19,6 +20,7 @@ SIZE_MATING_POOL = 0.2
 class GeneticAlgorithm:
     # constructor
     def __init__(self, population_size, n_epochs, min_depth, max_depth):
+
         self._population_size = population_size
         self._n_epochs = n_epochs
         self._X_train = None
@@ -39,6 +41,12 @@ class GeneticAlgorithm:
         # generate starting population
         print("\u2501" * 50)
         print("STARTING POPULATION")
+        if self._population_size<=1:
+            print(colorama.Style.BRIGHT,colorama.Fore.LIGHTRED_EX)
+            print("\u2501" * 50)
+            print("ALERT: POPULATION SIZE MUST BE AT LEAST 2")
+            print("\u2501" * 50, colorama.Style.NORMAL, colorama.Fore.RESET)
+            exit(1)
         population = self.__create_starting_population()
 
         best_trees = []

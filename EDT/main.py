@@ -1,10 +1,13 @@
+import os
+import shutil
+
 import colorama
 import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
-from EDT.genetic_algorithm import GeneticAlgorithm
+from genetic_algorithm import GeneticAlgorithm
 
 
 def execute_task(dataset_path, log_file):
@@ -14,11 +17,15 @@ def execute_task(dataset_path, log_file):
     y = dataset.iloc[:, -1:]
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
-    print("Train size:", len(X_train), ", Test size:", len(X_test))
+    print("\u2501" * 50, colorama.Style.BRIGHT, colorama.Fore.YELLOW)
+    print(log_file.name[17:-4])
+
+    print("Train size:", len(X_train), ", Test size:", len(X_test), colorama.Style.NORMAL, colorama.Fore.RESET)
+    print("\u2501" * 50)
 
     # create Genetic algorithm
 
-    genetic_algorithm = GeneticAlgorithm(10, 10, 5, 10)
+    genetic_algorithm = GeneticAlgorithm(population_size=10, n_epochs=15, min_depth=5, max_depth=10)
 
     # find population of best individuals
     best_individuals = genetic_algorithm.fit(X_train, y_train, 10)
@@ -40,13 +47,12 @@ def execute_task(dataset_path, log_file):
     # make prediction on train set
     Y_pred_train = np.apply_along_axis(best_tree.get_result, axis=1, arr=X_train)
     accuracy_train = accuracy_score(y_train, Y_pred_train)
-    print(colorama.Fore.MAGENTA, "Accuracy score in TRAIN set ", accuracy_train, colorama.Fore.RESET)
+    print(colorama.Fore.LIGHTGREEN_EX, "Accuracy score in TRAIN set ", accuracy_train, colorama.Fore.RESET)
 
     # make prediction on test set
     Y_pred_test = np.apply_along_axis(best_tree.get_result, axis=1, arr=X_test)
     accuracy_test = accuracy_score(y_test, Y_pred_test)
-    print(colorama.Fore.YELLOW, "Accuracy score in TEST set ", accuracy_test, colorama.Fore.RESET)
-
+    print(colorama.Fore.LIGHTGREEN_EX, "Accuracy score in TEST set ", accuracy_test, colorama.Fore.RESET)
 
     if log_file is not None:
         log_file.write("=" * 200)
@@ -54,7 +60,9 @@ def execute_task(dataset_path, log_file):
         log_file.write("Accuracy score in TRAIN set {}\n".format(accuracy_train))
         log_file.write("Accuracy score in TEST set {}\n".format(accuracy_test))
         log_file.write("=" * 200)
-        log_file.write(best_tree.__str__(feature_names=X_train.columns.values.tolist(),class_names=["NO complex class", "Complex class"]))
+        log_file.write(best_tree.__str__(feature_names=X_train.columns.values.tolist(),
+                                         class_names=["NOT " + y.columns.values.tolist()[0],
+                                                      y.columns.values.tolist()[0]]))
 
 
 def get_fitness(tree):
@@ -62,6 +70,16 @@ def get_fitness(tree):
 
 
 if __name__ == '__main__':
-    with open('log.txt', 'w+') as file:
-        # execute task
-        execute_task('../datasets/oversampling/oversampling_ComplexClass.csv', file)
+
+    path_directory = 'result'
+    isExist = os.path.exists(path_directory)
+    if isExist:
+        shutil.rmtree(path_directory)
+    os.mkdir(path_directory)
+
+    # execute task
+    os.chdir("../datasets/oversampling/")
+    for path in os.listdir():
+        with open("../../EDT/result/" + path[13:-4] + '.txt', 'w+') as file:
+            execute_task(path, file)
+    os.chdir("../..")
