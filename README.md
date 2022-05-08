@@ -50,7 +50,7 @@ Tree is composed by classes ``Leaf`` and ``Decision``.
 
  * ``Leaf``: represent the class to which the objects belongs (are the nodes that give us the classification).
  * ``Decision``: represent the decision node and use a ``Rule`` to choose which of the two children will have the decision.
-   * It can have two types of childrens : Decision or Leaf.
+   * It can have two types of children : Decision or Leaf.
 
 The structure of tree is available in ``EDT/tree.py``
 

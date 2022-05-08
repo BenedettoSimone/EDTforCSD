@@ -1,377 +1,124 @@
 ========================================================================================================================================================================================================
-FITNESS 0.4961425236016648
-Accuracy score in TRAIN set 0.6526692157592574
-Accuracy score in TEST set 0.6539496167966569
-========================================================================================================================================================================================================|--- M_TextualEntropy>=0.03342965028608614
-|--- M_LCOM>=36428.62784747669
-|	|--- M_NOA>=1394.5039141908092
-|	|	|--- M_NOC>=29.25040422554416
-|	|	|	|--- M_FanIn>=1554.2243936170207
+FITNESS 0.5673698101715562
+Accuracy score in TRAIN set: 0.6741109193652083
+Accuracy score in TEST set: 0.6761804862368247
+Precision: [0.35208834 0.9995606 ]
+Recall: [0.99875084 0.60724846]
+F-measure: [0.52063715 0.75551184]
+========================================================================================================================================================================================================|--- M_LOC>=3482.0193375680915
+|--- M_WMC>=1236.0016693932
+|	|--- M_LOC>=539.0506531731893
+|	|	|--$  Class: LazyClass
+|	|	|--- M_LCOM>=3792.8801892770935
+|	|	|	|--- M_WMC>=652.2420989755834
+|	|	|	|	|--- M_ELOC>=4295.714089749704
+|	|	|	|	|	|--- M_WMC>=793.0512744636426
+|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|--$  Class: LazyClass
+|	|	|	|--- M_NOMNAMM>=250.88486950235716
 |	|	|	|	|--- M_WMCNAMM>=0.0
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--- M_NOC>=16.18883477970014
-|	|	|	|	|	|--- M_WMC>=152.2321044082003
-|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|--- M_NOPA>=418.5778572715516
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--- M_PMMM>=0.7921006013739769
-|	|	|	|	|	|--- M_CBO>=122.29422558312973
-|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--- M_PRB>=3.3452866846415943
+|	|	|	|	|	|--- M_CYCLO>=1459.8201355719384
+|	|	|	|	|	|	|--- M_LOCNAMM>=2109.7186318662584
 |	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|--- M_PMMM>=0.732571213326394
-|	|	|	|	|	|	|	|	|--- M_LOC>=3144.6488812431417
+|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|--- M_ELOC>=344.3201852972631
+|	|	|	|	|	|	|--- M_LOCNAMM>=3212.8542862633703
+|	|	|	|	|	|	|	|--- M_NOC>=58.46671426388761
+|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=68.21898584409857
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
 |	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_LCOM>=45416.82447831746
+|	|	|	|	|	|	|	|	|--- M_CBO>=104.30209776583429
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|--- M_LOC>=2910.359323519145
-|	|	|	|--- M_NOA>=481.73247361343226
+|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|--$  Class: LazyClass
 |	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|--- M_TextualEntropy>=0.7718079700310576
-|	|	|	|	|--- M_LOCNAMM>=5130.9509663503
+|	|--- M_NOMNAMM>=246.61290716682043
+|	|	|--$  Class: LazyClass
+|	|	|--$  Class: LazyClass
+|--- M_TextualEntropy>=0.5000311226855871
+|	|--- M_CBO>=7.949504059329127
+|	|	|--- M_NOPA>=711.0742848490203
+|	|	|	|--- M_DIT>=1.6562184267227766
+|	|	|	|	|--- M_WLOCNAMM>=160.1977636658881
+|	|	|	|	|	|--- M_ELOC>=2233.0665921326217
+|	|	|	|	|	|	|--- M_FanIn>=6463.094022434869
+|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.5874887048947951
+|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|--- M_CYCLO>=324.824610686263
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|--- M_CBO>=56.868608139692526
+|	|	|	|	|	|	|	|--- M_NOM>=359.04981022131716
+|	|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|--- M_LCOM>=12213.443815405008
+|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|--$  Class: LazyClass
 |	|	|	|	|	|--- M_WMCNAMM>=0.0
-|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|--- M_CBO>=22.52904052898686
-|	|	|	|	|	|	|	|--- M_NOPA>=29.12198246655482
-|	|	|	|	|	|	|	|	|--- M_ELOC>=4683.757612790952
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|--- M_NOM>=26.8582830058718
+|	|	|	|	|	|--- M_FanIn>=9595.368859848537
+|	|	|	|	|	|	|--- M_NOM>=226.27240849003164
+|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.801841973464252
+|	|	|	|	|	|	|	|	|--- M_CBO>=79.1411483493661
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--- M_FanIn>=9088.199104658135
 |	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|--- M_NOPA>=7.0435217445683485
-|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=5237.273635249993
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_NOM>=228.90832382367864
+|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|--- M_FanIn>=30507.543545836194
+|	|	|	|	|	|	|	|--- M_CYCLO>=476.6721927351625
+|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=189.7263859655457
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--- M_NOM>=82.43047286702122
-|	|	|	|	|	|	|--- M_LOC>=2806.9136108881016
-|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|--- M_PRB>=2.38477001124718
+|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|--- M_NOA>=819.7017801158676
+|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|--- M_NOM>=71.72201900554468
+|	|	|	|	|--- M_NOA>=1080.9594537917403
+|	|	|	|	|	|--- M_DIT>=1.456250648315914
+|	|	|	|	|	|	|--- M_CBO>=69.6428760031246
+|	|	|	|	|	|	|	|--- M_NOM>=303.9473799082432
 |	|	|	|	|	|	|	|	|--$  Class: LazyClass
 |	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--- M_PMMM>=0.41379237446731265
-|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_FanIn_1>=127.173866913283
-|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--- M_NOPA>=459.0563657601896
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--- M_TextualCohesion>=0.7728799338984004
-|	|	|	|	|	|	|--- M_WLOCNAMM>=67.75845404916889
-|	|	|	|	|	|	|	|--- M_WLOCNAMM>=139.1119292499734
-|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=5319.399158560374
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_CYCLO>=851.8094959882364
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|--- M_NOM>=158.76825197466718
-|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=239.08481220385622
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|--$  Class: LazyClass
-|	|--- M_LOCNAMM>=2123.827037382224
-|	|	|--- M_NOPA>=261.28685992775445
-|	|	|	|--- M_FanIn>=7803.292831807823
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|--- M_CYCLO>=1311.720636701718
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--- M_WMC>=1179.4358240350737
-|	|	|	|	|	|--- M_NOC>=133.3435525247109
-|	|	|	|	|	|	|--- M_LOCNAMM>=258.9091565474389
 |	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
 |	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|--- M_TextualEntropy>=0.10850986977483248
-|	|	|	|--- M_PMMM>=0.6092727054002268
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--- M_NOM>=74.95261152868753
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|--- M_NOMNAMM>=166.11475900681185
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--- M_FanIn>=6512.121631384528
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--$  Class: LazyClass
-|--- M_NOPA>=165.8444706048976
-|	|--- M_LOC>=4002.6825786574914
-|	|	|--- M_CBO>=81.8943131568244
-|	|	|	|--- M_NOPA>=111.1482461753817
-|	|	|	|	|--- M_NOC>=13.414098290430452
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--- M_NOC>=111.89420059691406
-|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--- M_CYCLO>=281.210622862457
-|	|	|	|	|	|	|	|--- M_FanIn>=2309.436984018291
-|	|	|	|	|	|	|	|	|--- M_NOA>=273.0268246233
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_WMC>=1333.5843153712738
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_PRB>=2.931655984672261
-|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|--- M_TextualCohesion>=0.5987626939714571
-|	|	|	|	|--- M_CYCLO>=153.0719016777703
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--- M_NOPA>=110.65089924000277
-|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|--- M_NOA>=1072.4364868520502
-|	|	|	|--- M_WLOCNAMM>=249.94110429569244
-|	|	|	|	|--- M_PRB>=3.9855432427772084
-|	|	|	|	|	|--- M_NOA>=892.1346077812219
-|	|	|	|	|	|	|--- M_NOC>=40.278676535638056
+|	|	|	|	|	|--- M_ELOC>=4980.833157712779
+|	|	|	|	|	|	|--- M_PMMM>=0.6652707770293205
 |	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--- M_PMMM>=0.19973155590729497
-|	|	|	|	|	|	|	|--- M_WLOCNAMM>=192.18459149864583
-|	|	|	|	|	|	|	|	|--- M_NOA>=192.83242280051587
+|	|	|	|	|	|	|	|--- M_CBO>=139.7674294331936
+|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=3728.0216777266437
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--- M_LOCNAMM>=127.32270110045056
-|	|	|	|	|	|--- M_LCOM>=36428.62784747669
-|	|	|	|	|	|	|--- M_NOA>=1394.5039141908092
-|	|	|	|	|	|	|	|--- M_NOC>=29.25040422554416
-|	|	|	|	|	|	|	|	|--- M_FanIn>=1554.2243936170207
-|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_NOC>=16.18883477970014
-|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=152.2321044082003
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--- M_NOPA>=418.5778572715516
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7921006013739769
-|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=122.29422558312973
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.3452866846415943
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.732571213326394
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=3144.6488812431417
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=45416.82447831746
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_LOC>=2910.359323519145
-|	|	|	|	|	|	|	|	|--- M_NOA>=481.73247361343226
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.7718079700310576
-|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=5130.9509663503
-|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=22.52904052898686
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=29.12198246655482
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4683.757612790952
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=9088.199104658135
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=7.0435217445683485
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=5237.273635249993
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=228.90832382367864
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=82.43047286702122
-|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=2806.9136108881016
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=2.38477001124718
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.41379237446731265
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=127.173866913283
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_NOPA>=459.0563657601896
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.7728799338984004
-|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=67.75845404916889
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=139.1119292499734
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=5319.399158560374
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=851.8094959882364
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=158.76825197466718
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=239.08481220385622
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--- M_LOCNAMM>=2123.827037382224
-|	|	|	|	|	|	|	|--- M_NOPA>=261.28685992775445
-|	|	|	|	|	|	|	|	|--- M_FanIn>=7803.292831807823
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--- M_CYCLO>=1311.720636701718
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_WMC>=1179.4358240350737
-|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=133.3435525247109
-|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=258.9091565474389
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.10850986977483248
-|	|	|	|	|	|	|	|	|--- M_PMMM>=0.6092727054002268
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_NOM>=74.95261152868753
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=166.11475900681185
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_FanIn>=6512.121631384528
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--- M_NOPA>=165.8444706048976
-|	|	|	|	|	|	|--- M_LOC>=4002.6825786574914
-|	|	|	|	|	|	|	|--- M_CBO>=81.8943131568244
-|	|	|	|	|	|	|	|	|--- M_NOPA>=111.1482461753817
-|	|	|	|	|	|	|	|	|	|--- M_NOC>=13.414098290430452
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=111.89420059691406
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=281.210622862457
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=2309.436984018291
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=273.0268246233
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1333.5843153712738
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=2.931655984672261
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.5987626939714571
-|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=153.0719016777703
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=110.65089924000277
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_NOA>=1072.4364868520502
-|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=249.94110429569244
-|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.9855432427772084
-|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=892.1346077812219
-|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=40.278676535638056
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.19973155590729497
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=192.18459149864583
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=192.83242280051587
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=186.68752469425147
-|	|	|	|	|	|	|	|	|	|--- M_NOM>=303.32184020392106
-|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=1528.546357895007
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|--- M_WLOCNAMM>=221.4172084265997
-|	|	|	|	|	|	|	|--- M_WMC>=433.18627914482414
-|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.6521315891863265
-|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.1768958972225088
-|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.7813766836134848
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_FanIn_1>=1042.7116317857588
-|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_NOC>=96.34064350936836
-|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=64.50398574182198
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.9052106949656267
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|--- M_CYCLO>=1516.1991345611675
-|	|	|	|	|	|	|	|	|	|--- M_CBO>=15.784752410179664
-|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.9926718771800266
-|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=1030.2976907223112
-|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=740.4843597312705
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=479.7326008821419
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|--- M_WLOCNAMM>=186.68752469425147
-|	|	|	|	|--- M_NOM>=303.32184020392106
-|	|	|	|	|	|--- M_NOA>=1528.546357895007
-|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|--- M_WLOCNAMM>=221.4172084265997
-|	|	|--- M_WMC>=433.18627914482414
-|	|	|	|--- M_TextualCohesion>=0.6521315891863265
-|	|	|	|	|--- M_DIT>=1.1768958972225088
-|	|	|	|	|	|--- M_DIT>=1.7813766836134848
-|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|--- M_FanIn_1>=1042.7116317857588
-|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|--- M_NOC>=96.34064350936836
-|	|	|	|--- M_NOMNAMM>=64.50398574182198
-|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|--- M_PMMM>=0.9052106949656267
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|--- M_CYCLO>=1516.1991345611675
-|	|	|	|	|--- M_CBO>=15.784752410179664
-|	|	|	|	|	|--- M_TextualCohesion>=0.9926718771800266
-|	|	|	|	|	|	|--- M_FanIn_1>=1030.2976907223112
-|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|	|	|--- M_FanIn_1>=740.4843597312705
 |	|	|	|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|	|	|	|	|--- M_NOPA>=479.7326008821419
+|	|	|	|	|	|	|--- M_NOC>=100.69656578217382
+|	|	|	|	|	|	|	|--- M_NOPA>=298.47977657546807
+|	|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|	|	|--- M_ELOC>=1211.343976498916
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|--- M_NOM>=26.96747992442709
+|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.5040064689272318
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|	|--- M_NOC>=85.33267407254998
 |	|	|	|	|	|	|	|	|	|--$  Class: LazyClass
 |	|	|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|--- M_FanIn>=11530.74901576264
+|	|	|	|	|	|--- M_PMMM>=0.25511237402237275
 |	|	|	|	|	|	|--$  Class: NOT LazyClass
-|	|	|	|	|	|--$  Class: LazyClass
-|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|--$  Class: LazyClass
+|	|--- M_LCOM>=63174.94895753239
+|	|	|--$  Class: LazyClass
+|	|	|--$  Class: LazyClass

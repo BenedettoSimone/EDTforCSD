@@ -47,6 +47,10 @@ class GeneticAlgorithm:
             print("ALERT: POPULATION SIZE MUST BE AT LEAST 2")
             print("\u2501" * 50, colorama.Style.NORMAL, colorama.Fore.RESET)
             exit(1)
+
+        global data_to_print
+        data_to_print = []
+
         population = self.__create_starting_population()
 
         best_trees = []
@@ -56,13 +60,13 @@ class GeneticAlgorithm:
         print("BEST TREE with fitness of:", self.__get_tree_score(best_tree))
 
         epoch_without_progress = 0
-
         for epoch in range(self._n_epochs):
 
             # execute genetic operators
             population = self.__execute_genetic_operators(population)
 
             epoch_best = self.__find_best(population)
+
             if self.__get_tree_score(epoch_best) < self.__get_tree_score(best_tree):
                 epoch_without_progress += 1
                 if epoch_without_progress >= stop_after_no_progress:
@@ -73,7 +77,6 @@ class GeneticAlgorithm:
             best_trees.append(epoch_best)
 
             print('Epoch {} - best fitness: {}'.format(epoch, self.__get_tree_score(epoch_best)))
-
         return best_trees
 
     # function to get useful information from dataset

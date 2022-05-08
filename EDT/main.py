@@ -4,7 +4,7 @@ import shutil
 import colorama
 import numpy as np
 import pandas as pd
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.model_selection import train_test_split
 
 from genetic_algorithm import GeneticAlgorithm
@@ -25,7 +25,7 @@ def execute_task(dataset_path, log_file):
 
     # create Genetic algorithm
 
-    genetic_algorithm = GeneticAlgorithm(population_size=10, n_epochs=15, min_depth=5, max_depth=10)
+    genetic_algorithm = GeneticAlgorithm(population_size=15, n_epochs=10, min_depth=3, max_depth=10)
 
     # find population of best individuals
     best_individuals = genetic_algorithm.fit(X_train, y_train, 10)
@@ -54,11 +54,24 @@ def execute_task(dataset_path, log_file):
     accuracy_test = accuracy_score(y_test, Y_pred_test)
     print(colorama.Fore.LIGHTGREEN_EX, "Accuracy score in TEST set ", accuracy_test, colorama.Fore.RESET)
 
+    # precision, recall, f-measure
+    per_class_precision = precision_score(Y_pred_test, y_test, average=None)
+    print(colorama.Fore.LIGHTGREEN_EX, 'Precision score:', per_class_precision, colorama.Fore.RESET)
+
+    recall = recall_score(Y_pred_test, y_test, average=None)
+    print(colorama.Fore.LIGHTGREEN_EX, 'Recall score:', recall, colorama.Fore.RESET)
+
+    F1_measure = f1_score(Y_pred_test, y_test, average=None)
+    print(colorama.Fore.LIGHTGREEN_EX, 'F1 score:', F1_measure, colorama.Fore.RESET)
+
     if log_file is not None:
         log_file.write("=" * 200)
         log_file.write("\nFITNESS {}\n".format(get_fitness(best_tree)))
-        log_file.write("Accuracy score in TRAIN set {}\n".format(accuracy_train))
-        log_file.write("Accuracy score in TEST set {}\n".format(accuracy_test))
+        log_file.write("Accuracy score in TRAIN set: {}\n".format(accuracy_train))
+        log_file.write("Accuracy score in TEST set: {}\n".format(accuracy_test))
+        log_file.write("Precision: {}\n".format(per_class_precision))
+        log_file.write("Recall: {}\n".format(recall))
+        log_file.write("F-measure: {}\n".format(F1_measure))
         log_file.write("=" * 200)
         log_file.write(best_tree.__str__(feature_names=X_train.columns.values.tolist(),
                                          class_names=["NOT " + y.columns.values.tolist()[0],

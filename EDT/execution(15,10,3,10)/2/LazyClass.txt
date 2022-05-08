@@ -1,0 +1,56 @@
+========================================================================================================================================================================================================
+FITNESS 0.5929976652116536
+Accuracy score in TRAIN set: 0.6797956214259128
+Accuracy score in TEST set: 0.6798348757338386
+Precision: [0.60550117 0.75400527]
+Recall: [0.71065082 0.65700654]
+F-measure: [0.6538757  0.70217186]
+========================================================================================================================================================================================================|--- M_WMCNAMM>=0.0
+|--- M_NOM>=275.4161305762792
+|	|--- M_TextualCohesion>=0.2927318231325021
+|	|	|--$  Class: LazyClass
+|	|	|--$  Class: NOT LazyClass
+|	|--- M_DIT>=1.6751289600729486
+|	|	|--- M_NOA>=1498.4915653554865
+|	|	|	|--- M_NOMNAMM>=252.50309403775302
+|	|	|	|	|--- M_ELOC>=5338.799196049959
+|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|--$  Class: LazyClass
+|	|	|	|--$  Class: NOT LazyClass
+|	|	|--- M_NOM>=275.4161305762792
+|	|	|	|--- M_TextualCohesion>=0.2927318231325021
+|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|--- M_DIT>=1.6751289600729486
+|	|	|	|	|--- M_NOA>=1498.4915653554865
+|	|	|	|	|	|--- M_NOMNAMM>=252.50309403775302
+|	|	|	|	|	|	|--- M_ELOC>=5338.799196049959
+|	|	|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|--$  Class: LazyClass
+|--- M_NOPA>=479.95937674029136
+|	|--- M_CBO>=145.87721727803313
+|	|	|--$  Class: LazyClass
+|	|	|--- M_NOM>=122.95304808787122
+|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|--$  Class: LazyClass
+|	|--- M_LOC>=2905.897721830813
+|	|	|--- M_TextualEntropy>=0.046074569183670595
+|	|	|	|--- M_NOPA>=50.15078853997146
+|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|--- M_DIT>=1.3921544312877145
+|	|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|--$  Class: LazyClass
+|	|	|--- M_TextualCohesion>=0.11264191284993763
+|	|	|	|--- M_ELOC>=3745.8077705343385
+|	|	|	|	|--$  Class: LazyClass
+|	|	|	|	|--- M_CYCLO>=235.54014001637654
+|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|--- M_NOMNAMM>=325.9759218776061
+|	|	|	|	|--$  Class: NOT LazyClass
+|	|	|	|	|--$  Class: NOT LazyClass
