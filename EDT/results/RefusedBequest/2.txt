@@ -1,0 +1,58 @@
+========================================================================================================================================================================================================
+FITNESS 0.5108619442896096
+Accuracy score in TRAIN set: 0.5867292366561714
+Accuracy score in TEST set: 0.7403598971722365
+Precision: [0.74050976 0.66666667]
+Recall: [0.99908542 0.00519751]
+F-measure: [0.85058008 0.0103146 ]
+========================================================================================================================================================================================================|--- M_PMMM>=0.6164257014971046
+|--- M_LCOM>=47009.01426502335
+|	|--- M_TextualEntropy>=0.49765768911298525
+|	|	|--- M_NOM>=275.3223865438122
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_PMMM>=0.6003410951263598
+|	|	|	|--- M_CYCLO>=1396.4400330385404
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_FanIn>=27078.884496774368
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_NOC>=29.868097743955982
+|	|	|--$  Class: RefusedBequest
+|	|	|--- M_PRB>=3.077747454622619
+|	|	|	|--- M_NOPA>=30.363886818230146
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_LCOM>=241.875541339108
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|--- M_NOMNAMM>=80.78414049313602
+|	|--- M_PMMM>=0.10411961049179652
+|	|	|--- M_NOMNAMM>=80.78414049313602
+|	|	|	|--- M_PMMM>=0.10411961049179652
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--- M_LOC>=1031.5025205998488
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--- M_TextualEntropy>=0.3873209602570171
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_LOCNAMM>=4919.116028986734
+|	|	|	|	|--- M_NOPA>=400.9573235115956
+|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|--- M_DIT>=1.7190036724053535
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_LOC>=1031.5025205998488
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_TextualEntropy>=0.3873209602570171
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|--- M_TextualCohesion>=0.21442084374727488
+|	|	|--- M_NOPA>=400.9573235115956
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_DIT>=1.7190036724053535
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: RefusedBequest

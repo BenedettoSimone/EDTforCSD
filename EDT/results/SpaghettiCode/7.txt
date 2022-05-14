@@ -1,0 +1,48 @@
+========================================================================================================================================================================================================
+FITNESS 0.47951284764207985
+Accuracy score in TRAIN set: 0.5550634824667473
+Accuracy score in TEST set: 0.9809227438776891
+Precision: [0.98612434 0.025     ]
+Recall: [0.99464874 0.00970874]
+F-measure: [0.99036819 0.01398601]
+========================================================================================================================================================================================================|--- M_WLOCNAMM>=127.0235983362672
+|--- M_CYCLO>=1362.426505037493
+|	|--- M_NOMNAMM>=338.516278331927
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|	|--- M_NOMNAMM>=34.86762379001692
+|	|	|--- M_WMC>=91.40855783310833
+|	|	|	|--- M_DIT>=1.7832721821902027
+|	|	|	|	|--- M_NOMNAMM>=139.70822948734346
+|	|	|	|	|	|--- M_NOA>=139.27588036066038
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--- M_DIT>=1.9762450476668334
+|	|	|	|	|--- M_NOC>=10.486967376160841
+|	|	|	|	|	|--- M_PMMM>=0.07377886251307364
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--- M_NOC>=52.47124457369167
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_TextualCohesion>=0.5822225240268435
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|--- M_WMC>=91.40855783310833
+|	|--- M_DIT>=1.7832721821902027
+|	|	|--- M_NOMNAMM>=139.70822948734346
+|	|	|	|--- M_NOA>=139.27588036066038
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|	|--- M_DIT>=1.9762450476668334
+|	|	|--- M_NOC>=10.486967376160841
+|	|	|	|--- M_PMMM>=0.07377886251307364
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode

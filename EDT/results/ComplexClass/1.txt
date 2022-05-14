@@ -1,0 +1,34 @@
+========================================================================================================================================================================================================
+FITNESS 0.445
+Accuracy score in TRAIN set: 0.5
+Accuracy score in TEST set: 0.999052902178325
+Precision: [1. 0.]
+Recall: [0.9990529 0.       ]
+F-measure: [0.99952623 0.        ]
+========================================================================================================================================================================================================|--- M_WMC>=1132.6774760525095
+|--- M_NOC>=121.52480234483502
+|	|--- M_WLOCNAMM>=17.982171131512274
+|	|	|--$  Class: ComplexClass
+|	|	|--$  Class: ComplexClass
+|	|--- M_NOA>=529.7665633545664
+|	|	|--- M_CBO>=44.2540397076092
+|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: ComplexClass
+|	|	|--- M_LOC>=2610.360606727324
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--- M_NOMNAMM>=109.90406633523665
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|--- M_WMC>=1205.0313584858081
+|	|--- M_WMC>=1118.502370636137
+|	|	|--$  Class: NOT ComplexClass
+|	|	|--$  Class: NOT ComplexClass
+|	|--- M_WLOCNAMM>=177.1922712772632
+|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_PRB>=1.4652116638041508
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--- M_TextualCohesion>=0.3142479704046136
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass

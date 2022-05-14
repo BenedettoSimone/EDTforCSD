@@ -1,0 +1,48 @@
+========================================================================================================================================================================================================
+FITNESS 0.4414877222054836
+Accuracy score in TRAIN set: 0.4964522446520036
+Accuracy score in TEST set: 0.030713029360032472
+Precision: [0.02915254 0.75      ]
+Recall: [0.98173516 0.00167317]
+F-measure: [0.05662365 0.0033389 ]
+========================================================================================================================================================================================================|--- M_WMCNAMM>=0.0
+|--- M_TextualEntropy>=0.7662863078869058
+|	|--- M_FanIn>=2549.7001633858767
+|	|	|--- M_PMMM>=0.6730164284437283
+|	|	|	|--- M_TextualCohesion>=0.14026688095801176
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_TextualCohesion>=0.0657422983934639
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_TextualEntropy>=0.658201811984871
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_LOCNAMM>=5110.574585797889
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_CBO>=53.8926005770842
+|	|	|	|--- M_DIT>=1.3542608028440686
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|--- M_NOMNAMM>=17.472932361726052
+|	|--- M_TextualCohesion>=0.7163982393628954
+|	|	|--- M_ELOC>=675.5375621672033
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_NOM>=112.33066466591174
+|	|	|	|--- M_NOM>=101.60956762054182
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_ELOC>=3109.744859142321
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_TextualEntropy>=0.461074453984033
+|	|	|--- M_CYCLO>=692.1261621947224
+|	|	|	|--- M_TextualEntropy>=0.3456756162464896
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_ELOC>=4974.872332220277
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest

@@ -1,0 +1,60 @@
+========================================================================================================================================================================================================
+FITNESS 0.4514917218543046
+Accuracy score in TRAIN set: 0.5368603251053582
+Accuracy score in TEST set: 0.9968881071573535
+Precision: [0.99796831 0.        ]
+Recall: [0.9989154 0.       ]
+F-measure: [0.99844163 0.        ]
+========================================================================================================================================================================================================|--- M_NOA>=1445.2278937751123
+|--- M_CBO>=2.155747187749056
+|	|--- M_WLOCNAMM>=92.65842273754707
+|	|	|--$  Class: NOT LargeClass
+|	|	|--$  Class: NOT LargeClass
+|	|--- M_NOM>=33.65062131298936
+|	|	|--- M_PRB>=3.4881268654583337
+|	|	|	|--- M_CBO>=2.155747187749056
+|	|	|	|	|--- M_WLOCNAMM>=92.65842273754707
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--- M_NOM>=33.65062131298936
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--- M_LOC>=706.0184243595868
+|	|	|	|	|	|	|--- M_DIT>=1.7657024424386414
+|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|--- M_WLOCNAMM>=39.91055962708049
+|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--- M_NOM>=174.13766852804494
+|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|	|--- M_LCOM>=69855.2342254831
+|	|	|	|	|	|	|--- M_PMMM>=0.7904021115639879
+|	|	|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|--- M_CYCLO>=687.5152545705831
+|	|	|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|--- M_LOC>=706.0184243595868
+|	|	|	|--- M_DIT>=1.7657024424386414
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|--- M_WLOCNAMM>=39.91055962708049
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: LargeClass
+|--- M_WMCNAMM>=0.0
+|	|--- M_NOM>=174.13766852804494
+|	|	|--$  Class: LargeClass
+|	|	|--- M_LCOM>=69855.2342254831
+|	|	|	|--- M_PMMM>=0.7904021115639879
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|--- M_CYCLO>=687.5152545705831
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|--- M_WMCNAMM>=0.0
+|	|	|--$  Class: NOT LargeClass
+|	|	|--$  Class: NOT LargeClass

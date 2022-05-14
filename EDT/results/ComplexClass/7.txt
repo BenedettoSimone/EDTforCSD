@@ -1,0 +1,40 @@
+========================================================================================================================================================================================================
+FITNESS 0.5088515068987828
+Accuracy score in TRAIN set: 0.5644964716149321
+Accuracy score in TEST set: 0.15397104586659452
+Precision: [0.15328368 1.        ]
+Recall: [1.00000000e+00 9.58619588e-04]
+F-measure: [0.2658213 0.0019154]
+========================================================================================================================================================================================================|--- M_TextualCohesion>=0.9668593906670875
+|--- M_WLOCNAMM>=265.0640182148344
+|	|--- M_PMMM>=0.1837756676111294
+|	|	|--$  Class: NOT ComplexClass
+|	|	|--$  Class: ComplexClass
+|	|--- M_TextualCohesion>=0.26511277041685766
+|	|	|--- M_WLOCNAMM>=85.76902151502411
+|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_TextualCohesion>=0.4396045092379647
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--$  Class: NOT ComplexClass
+|--- M_NOA>=989.5638245017578
+|	|--- M_LCOM>=23190.514910630533
+|	|	|--- M_PRB>=0.6503998689669617
+|	|	|	|--- M_PMMM>=0.1837756676111294
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_NOM>=151.06352703578636
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|--- M_LCOM>=18868.80014397412
+|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|--- M_NOM>=180.64233716324148
+|	|	|--$  Class: ComplexClass
+|	|	|--- M_PRB>=3.610522399599772
+|	|	|	|--- M_TextualCohesion>=0.6777040751545862
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--- M_PRB>=1.859979244810297
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: ComplexClass

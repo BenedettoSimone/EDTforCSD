@@ -1,0 +1,40 @@
+========================================================================================================================================================================================================
+FITNESS 0.4349102176541717
+Accuracy score in TRAIN set: 0.4999093107617896
+Accuracy score in TEST set: 0.9937762143147071
+Precision: [0.99918378 0.        ]
+Recall: [0.99458362 0.        ]
+F-measure: [0.99687839 0.        ]
+========================================================================================================================================================================================================|--- M_NOM>=238.0116350203737
+|--- M_PMMM>=0.593957255696618
+|	|--- M_ELOC>=5295.115544183107
+|	|	|--- M_PMMM>=0.7782452320022025
+|	|	|	|--- M_NOM>=365.41085396540734
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_DIT>=1.4478694677554067
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--- M_LOC>=2632.4074520601057
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_PMMM>=0.561303112829831
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|--- M_WLOCNAMM>=254.96535786465208
+|	|--- M_CBO>=147.21541473675805
+|	|	|--- M_DIT>=1.4478694677554067
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_LOC>=2632.4074520601057
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--- M_PMMM>=0.561303112829831
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_LOC>=2371.1471930460125
+|	|	|	|--- M_NOM>=270.4136078769911
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|--- M_WMCNAMM>=0.0
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode

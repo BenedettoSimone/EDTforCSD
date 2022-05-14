@@ -1,0 +1,48 @@
+========================================================================================================================================================================================================
+FITNESS 0.4450744797700907
+Accuracy score in TRAIN set: 0.5000752320910007
+Accuracy score in TEST set: 0.0008117981328642944
+Precision: [0. 1.]
+Recall: [0.        0.0008118]
+F-measure: [0.         0.00162228]
+========================================================================================================================================================================================================|--- M_CYCLO>=1450.071032753132
+|--- M_FanIn_1>=357.7487371592054
+|	|--- M_FanIn_1>=1077.6527885478577
+|	|	|--- M_WMC>=28.167050062020873
+|	|	|	|--- M_WMC>=893.6038286232844
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--- M_DIT>=1.231785360857386
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_NOPA>=84.77942211233645
+|	|	|	|--- M_DIT>=1.6238574861737072
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_FanIn_1>=1350.4777801754246
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|--- M_DIT>=1.4721778911061898
+|	|	|--- M_PMMM>=0.12512778421247772
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_PRB>=1.0993992106050001
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: ComplexClass
+|--- M_PRB>=2.950375454024711
+|	|--- M_NOA>=1583.8908836884368
+|	|	|--- M_PMMM>=0.12512778421247772
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_ELOC>=4058.940344007203
+|	|	|	|--- M_TextualCohesion>=0.5720723402727992
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|--- M_WLOCNAMM>=220.80494482821697
+|	|	|--- M_NOPA>=129.56648433292816
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_NOM>=91.51843312250094
+|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: ComplexClass

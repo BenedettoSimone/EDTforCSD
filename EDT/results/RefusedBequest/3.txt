@@ -1,0 +1,40 @@
+========================================================================================================================================================================================================
+FITNESS 0.4469314090299643
+Accuracy score in TRAIN set: 0.5019509182120852
+Accuracy score in TEST set: 0.007035583818157218
+Precision: [0.00501627 1.        ]
+Recall: [1.         0.00203971]
+F-measure: [0.00998246 0.00407111]
+========================================================================================================================================================================================================|--- M_DIT>=1.2571560713605914
+|--- M_NOMNAMM>=113.10907574442146
+|	|--- M_NOPA>=224.34968318030144
+|	|	|--- M_NOPA>=562.0722186113496
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_CYCLO>=1027.1118408045447
+|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: RefusedBequest
+|--- M_FanIn_1>=1081.4663912784802
+|	|--- M_NOMNAMM>=153.10007774493025
+|	|	|--- M_NOMNAMM>=88.31280496388989
+|	|	|	|--- M_NOC>=147.2084662903987
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: RefusedBequest
+|	|--- M_NOA>=1310.5336805295153
+|	|	|--- M_ELOC>=662.3430833938877
+|	|	|	|--- M_LOC>=2218.685198831966
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_NOA>=614.6014610518945
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_NOMNAMM>=88.31280496388989
+|	|	|	|--- M_NOC>=147.2084662903987
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest

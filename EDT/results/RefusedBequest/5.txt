@@ -1,0 +1,48 @@
+========================================================================================================================================================================================================
+FITNESS 0.425402687596981
+Accuracy score in TRAIN set: 0.5004067551484657
+Accuracy score in TEST set: 0.003111892842646462
+Precision: [0.0010846 1.       ]
+Recall: [1.         0.00203169]
+F-measure: [0.00216685 0.00405515]
+========================================================================================================================================================================================================|--- M_ELOC>=3141.821548773573
+|--- M_WMC>=1466.1546632436953
+|	|--- M_LOCNAMM>=2760.837450492859
+|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_NOPA>=153.09453786376014
+|	|	|--- M_CBO>=82.80058071203405
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_WMC>=180.58711222792314
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest
+|--- M_ELOC>=4393.954299193653
+|	|--- M_FanIn>=1953.3738269923697
+|	|	|--- M_NOA>=661.4217551056523
+|	|	|	|--- M_PMMM>=0.10070922907668378
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_WMC>=390.5945662062069
+|	|	|	|	|--- M_WMC>=857.3788635480842
+|	|	|	|	|	|--- M_NOA>=1343.2828821876126
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|--- M_FanIn_1>=896.4283633953169
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_TextualEntropy>=0.9232612419968523
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_PRB>=3.102557327088157
+|	|	|--- M_NOC>=121.08438516366085
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_WMC>=857.3788635480842
+|	|	|	|--- M_NOA>=1343.2828821876126
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_FanIn_1>=896.4283633953169
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest

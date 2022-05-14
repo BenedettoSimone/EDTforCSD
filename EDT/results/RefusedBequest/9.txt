@@ -1,0 +1,46 @@
+========================================================================================================================================================================================================
+FITNESS 0.4450745706538114
+Accuracy score in TRAIN set: 0.5000753238927388
+Accuracy score in TEST set: 0.0021647950209714517
+Precision: [0. 1.]
+Recall: [0.        0.0021648]
+F-measure: [0.         0.00432024]
+========================================================================================================================================================================================================|--- M_NOMNAMM>=265.5536820218031
+|--- M_NOM>=255.68966390255832
+|	|--- M_NOA>=878.3417238142456
+|	|	|--$  Class: RefusedBequest
+|	|	|--- M_FanIn_1>=442.7095996318689
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|--- M_NOPA>=140.30513604827001
+|	|	|--- M_TextualEntropy>=0.6217174061397299
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_LOC>=3836.3766282169936
+|	|	|	|--- M_NOC>=7.494029881162434
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_NOC>=120.78274742647021
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|--- M_NOC>=12.446654567853692
+|	|--- M_TextualEntropy>=0.907610439211062
+|	|	|--- M_CYCLO>=393.23863912954437
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_CYCLO>=244.31366330932622
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|--- M_LOC>=2066.3088894420835
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|--- M_FanIn>=13056.712995966876
+|	|	|--- M_TextualEntropy>=0.6217174061397299
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: RefusedBequest

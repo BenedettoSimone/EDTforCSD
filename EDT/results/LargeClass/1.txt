@@ -1,0 +1,40 @@
+========================================================================================================================================================================================================
+FITNESS 0.44552897350993376
+Accuracy score in TRAIN set: 0.5005343166767008
+Accuracy score in TEST set: 0.003111892842646462
+Precision: [0.00203169 1.        ]
+Recall: [1.        0.0010846]
+F-measure: [0.00405515 0.00216685]
+========================================================================================================================================================================================================|--- M_LOC>=3261.9545788430282
+|--- M_NOPA>=567.0478882306817
+|	|--- M_TextualCohesion>=0.6091454388018023
+|	|	|--$  Class: LargeClass
+|	|	|--- M_ELOC>=1252.7885077905476
+|	|	|	|--- M_CYCLO>=1200.3478953306937
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|--- M_FanIn_1>=280.2312600099628
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: LargeClass
+|	|--- M_NOPA>=244.685575095356
+|	|	|--$  Class: NOT LargeClass
+|	|	|--$  Class: NOT LargeClass
+|--- M_NOC>=115.37127363757382
+|	|--- M_TextualEntropy>=0.3521296968054736
+|	|	|--- M_TextualCohesion>=0.6690984963748798
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_NOC>=129.02447559987485
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|--$  Class: LargeClass
+|	|--- M_TextualCohesion>=0.05095966618828196
+|	|	|--- M_FanIn>=9119.533838068866
+|	|	|	|--- M_ELOC>=4560.812641949711
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|--$  Class: LargeClass
+|	|	|--- M_NOMNAMM>=224.68130970178927
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--$  Class: LargeClass

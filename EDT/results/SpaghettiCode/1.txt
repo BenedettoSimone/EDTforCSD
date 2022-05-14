@@ -1,0 +1,48 @@
+========================================================================================================================================================================================================
+FITNESS 0.5899510270711468
+Accuracy score in TRAIN set: 0.6767182091627745
+Accuracy score in TEST set: 0.3105127858205926
+Precision: [0.30699129 0.97435897]
+Recall: [0.99955713 0.00740308]
+F-measure: [0.46971904 0.01469451]
+========================================================================================================================================================================================================|--- M_TextualCohesion>=0.35464948500335847
+|--- M_NOMNAMM>=304.35467262004045
+|	|--- M_WMC>=41.21432219609162
+|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_NOA>=614.8411643396381
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--- M_TextualEntropy>=0.33611949489941967
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_LCOM>=62433.45244579653
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
+|--- M_NOM>=186.20220235598032
+|	|--- M_NOPA>=640.4953446871536
+|	|	|--- M_NOMNAMM>=194.0388916114779
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_TextualCohesion>=0.47670858005358974
+|	|	|	|--- M_NOMNAMM>=304.35467262004045
+|	|	|	|	|--- M_WMC>=41.21432219609162
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--- M_NOA>=614.8411643396381
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_TextualEntropy>=0.33611949489941967
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--- M_LCOM>=62433.45244579653
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_NOM>=186.20220235598032
+|	|	|	|	|--- M_NOPA>=640.4953446871536
+|	|	|	|	|	|--- M_NOMNAMM>=194.0388916114779
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_FanIn_1>=1037.1564717052522
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|--- M_FanIn_1>=1037.1564717052522
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode

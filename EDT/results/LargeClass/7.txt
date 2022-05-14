@@ -1,0 +1,50 @@
+========================================================================================================================================================================================================
+FITNESS 0.435
+Accuracy score in TRAIN set: 0.5
+Accuracy score in TEST set: 0.0012176971992964416
+Precision: [0. 1.]
+Recall: [0.        0.0012177]
+F-measure: [0.         0.00243243]
+========================================================================================================================================================================================================|--- M_FanIn_1>=802.323134527577
+|--- M_PMMM>=0.007766464135410489
+|	|--- M_CYCLO>=431.21090055241444
+|	|	|--- M_NOPA>=338.18358527311744
+|	|	|	|--- M_FanIn_1>=410.3860720751956
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|--- M_WMC>=98.08754793691247
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|--- M_ELOC>=4258.545919236734
+|	|	|	|--- M_TextualEntropy>=0.11688107149946295
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_NOPA>=338.18358527311744
+|	|	|	|	|--- M_FanIn_1>=410.3860720751956
+|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--- M_WMC>=98.08754793691247
+|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|--- M_LCOM>=13864.762131260606
+|	|	|--- M_FanIn_1>=1203.3030661959356
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--$  Class: LargeClass
+|	|	|--- M_NOMNAMM>=330.416551319966
+|	|	|	|--- M_FanIn>=4034.2014517636835
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_WMC>=1075.0399513272737
+|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|--$  Class: LargeClass
+|--- M_WMC>=1301.5920764256973
+|	|--- M_NOPA>=245.6743116461248
+|	|	|--$  Class: NOT LargeClass
+|	|	|--$  Class: NOT LargeClass
+|	|--- M_WMCNAMM>=0.0
+|	|	|--- M_TextualEntropy>=0.5753227690420736
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--$  Class: LargeClass
+|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--$  Class: NOT LargeClass

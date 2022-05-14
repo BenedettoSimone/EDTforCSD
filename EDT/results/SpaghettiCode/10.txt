@@ -1,0 +1,46 @@
+========================================================================================================================================================================================================
+FITNESS 0.44636918077388144
+Accuracy score in TRAIN set: 0.5013830108827085
+Accuracy score in TEST set: 0.9431741306994994
+Precision: [0.94830635 0.        ]
+Recall: [0.99429468 0.        ]
+F-measure: [0.97075616 0.        ]
+========================================================================================================================================================================================================|--- M_DIT>=1.7569028783499325
+|--- M_PRB>=0.4830159280735473
+|	|--- M_LCOM>=19245.354905961984
+|	|	|--- M_LOCNAMM>=2372.005847099236
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|	|--- M_WMCNAMM>=0.0
+|	|	|--- M_TextualEntropy>=0.30691106262844
+|	|	|	|--- M_PMMM>=0.7919629059190824
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_NOMNAMM>=85.62010299417229
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|--- M_NOM>=141.54589169199372
+|	|--- M_WMC>=1336.9958067922892
+|	|	|--- M_FanIn>=15443.346775787693
+|	|	|	|--- M_NOPA>=17.324371771394897
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_CBO>=61.611022802633784
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_LCOM>=19245.354905961984
+|	|	|	|--- M_LOCNAMM>=2372.005847099236
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|--- M_CBO>=93.90335810307268
+|	|	|--- M_PMMM>=0.5033999783204436
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_PMMM>=0.6377262057202168
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode

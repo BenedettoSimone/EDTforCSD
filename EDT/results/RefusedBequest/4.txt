@@ -1,0 +1,52 @@
+========================================================================================================================================================================================================
+FITNESS 0.4578041247985056
+Accuracy score in TRAIN set: 0.5331354795944501
+Accuracy score in TEST set: 0.9970234068461643
+Precision: [0.99905098 0.        ]
+Recall: [0.99796858 0.        ]
+F-measure: [0.99850949 0.        ]
+========================================================================================================================================================================================================|--- M_CYCLO>=190.62250133570035
+|--- M_PRB>=2.0274840627188513
+|	|--- M_PRB>=1.8265474744279593
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_PRB>=1.475202770788698
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|--- M_LOC>=2555.140955677179
+|	|	|--- M_PMMM>=0.14949335708207168
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_LOC>=5270.993927818973
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_TextualCohesion>=0.38068304609439885
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_NOPA>=104.90912981604615
+|	|	|	|	|--- M_TextualEntropy>=0.02529239739412959
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--- M_NOPA>=262.08934834231854
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--- M_DIT>=1.3596673124658167
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--- M_ELOC>=1748.4127959543498
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|--- M_LOC>=1098.7712911574738
+|	|--- M_TextualCohesion>=0.10864503314187379
+|	|	|--- M_TextualEntropy>=0.6857261649158634
+|	|	|	|--- M_NOMNAMM>=65.8614010699644
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: RefusedBequest
+|	|--- M_NOPA>=104.90912981604615
+|	|	|--- M_TextualEntropy>=0.02529239739412959
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_NOPA>=262.08934834231854
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_DIT>=1.3596673124658167
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_ELOC>=1748.4127959543498
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest

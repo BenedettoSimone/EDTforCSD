@@ -1,0 +1,40 @@
+========================================================================================================================================================================================================
+FITNESS 0.4443640417170496
+Accuracy score in TRAIN set: 0.4993576178960097
+Accuracy score in TEST set: 0.9945880124475713
+Precision: [1. 0.]
+Recall: [0.99458801 0.        ]
+F-measure: [0.99728666 0.        ]
+========================================================================================================================================================================================================|--- M_WMCNAMM>=0.0
+|--- M_TextualCohesion>=0.0036502994257501253
+|	|--- M_ELOC>=2694.548848969627
+|	|	|--- M_PMMM>=0.7173847247021803
+|	|	|	|--- M_CYCLO>=1110.0501704858177
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_LOC>=5311.634185277504
+|	|	|--- M_FanIn_1>=1247.5215593582138
+|	|	|	|--- M_CYCLO>=473.43459206982453
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--- M_FanIn_1>=1247.5215593582138
+|	|	|	|--- M_CYCLO>=473.43459206982453
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|--- M_CBO>=52.011826710258404
+|	|--- M_TextualCohesion>=0.5533765359949365
+|	|	|--- M_FanIn_1>=330.13150645988287
+|	|	|	|--- M_LCOM>=13627.837025316938
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_TextualEntropy>=0.8504874059592372
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|	|--- M_WMCNAMM>=0.0
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
