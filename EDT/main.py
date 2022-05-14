@@ -5,6 +5,8 @@ import colorama
 import numpy as np
 import pandas as pd
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+from statistics import mean
+
 from sklearn.model_selection import train_test_split
 
 from genetic_algorithm import GeneticAlgorithm
@@ -26,7 +28,7 @@ def execute_task(log_file):
     print("\u2501" * 50)
 
     # create Genetic algorithm
-    genetic_algorithm = GeneticAlgorithm(population_size=15, n_epochs=10, min_depth=3, max_depth=10)
+    genetic_algorithm = GeneticAlgorithm(population_size=4, n_epochs=1, min_depth=3, max_depth=5)
 
     # find population of best individuals
     best_individuals = genetic_algorithm.fit(X_train, y_train, 10)
@@ -83,6 +85,50 @@ def execute_task(log_file):
 def get_fitness(tree):
     return tree.get_score()
 
+def get_f_measure():
+
+    os.chdir("EDT/results")
+    for dir in os.listdir():
+        f_smell = []
+        f_not_smell = []
+        os.chdir(dir)
+        for file in os.listdir():
+
+            file = open(file, "r")
+            lines = file.readlines()
+            file.close()
+
+            for line in lines:
+                if "F-measure" in line:
+                    line_to_save = line
+
+            splitted = line_to_save.split()
+            first_value = splitted[1][1:]
+
+            if first_value == "0.":
+                first_value = first_value[:-1]
+
+
+            splitted[2]
+            second_value = splitted[2]
+
+            if "]" in second_value:
+                second_value = second_value[:-1]
+
+            if second_value == "0.":
+                second_value = second_value[:-1]
+
+            f_not_smell.append(float(first_value))
+            f_smell.append(float(second_value))
+        print("=================================")
+        print(dir)
+        print("F-NOTSMELL-MEAN: ", mean(f_not_smell))
+        print("F-SMELL-MEAN: ", mean(f_smell))
+
+        os.chdir("..")
+    os.chdir("../..")
+    print("================================")
+
 
 if __name__ == '__main__':
 
@@ -116,3 +162,9 @@ if __name__ == '__main__':
                     os.chdir("..")
             os.chdir("..")
     os.chdir("../..")
+
+    get_f_measure()
+
+
+
+
