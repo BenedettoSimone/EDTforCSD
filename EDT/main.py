@@ -10,30 +10,27 @@ from sklearn.model_selection import train_test_split
 from genetic_algorithm import GeneticAlgorithm
 
 
-def execute_task(dataset_path, log_file):
+def execute_task(log_file):
     train_set_over = pd.read_csv("train_set_oversampled.csv")
     X_train = train_set_over.iloc[:, :-1]
     y_train = train_set_over.iloc[:, -1:]
 
-
-    test_set= pd.read_csv("test_set.csv")
+    test_set = pd.read_csv("test_set.csv")
     X_test = test_set.iloc[:, 1:-1]
     y_test = test_set.iloc[:, -1:]
 
-
-
     print("\u2501" * 50, colorama.Style.BRIGHT, colorama.Fore.YELLOW)
-    print(log_file.name[17:-4])
+    print(log_file.name[24:-6] + ' - Fold ' + log_file.name[34:-4])
 
     print("Train size:", len(X_train), ", Test size:", len(X_test), colorama.Style.NORMAL, colorama.Fore.RESET)
     print("\u2501" * 50)
 
     # create Genetic algorithm
-
     genetic_algorithm = GeneticAlgorithm(population_size=15, n_epochs=10, min_depth=3, max_depth=10)
 
     # find population of best individuals
     best_individuals = genetic_algorithm.fit(X_train, y_train, 10)
+
     # choose best individual
     print("\u2501" * 50)
     counter = 1
@@ -66,8 +63,8 @@ def execute_task(dataset_path, log_file):
     recall = recall_score(Y_pred_test, y_test, average=None)
     print(colorama.Fore.LIGHTGREEN_EX, 'Recall score:', recall, colorama.Fore.RESET)
 
-    F1_measure = f1_score(Y_pred_test, y_test, average=None)
-    print(colorama.Fore.LIGHTGREEN_EX, 'F1 score:', F1_measure, colorama.Fore.RESET)
+    F_measure = f1_score(Y_pred_test, y_test, average=None)
+    print(colorama.Fore.LIGHTGREEN_EX, 'F-Measure:', F_measure, colorama.Fore.RESET)
 
     if log_file is not None:
         log_file.write("=" * 200)
@@ -76,7 +73,7 @@ def execute_task(dataset_path, log_file):
         log_file.write("Accuracy score in TEST set: {}\n".format(accuracy_test))
         log_file.write("Precision: {}\n".format(per_class_precision))
         log_file.write("Recall: {}\n".format(recall))
-        log_file.write("F-measure: {}\n".format(F1_measure))
+        log_file.write("F-measure: {}\n".format(F_measure))
         log_file.write("=" * 200)
         log_file.write(best_tree.__str__(feature_names=X_train.columns.values.tolist(),
                                          class_names=["NOT " + y_train.columns.values.tolist()[0],
@@ -89,7 +86,7 @@ def get_fitness(tree):
 
 if __name__ == '__main__':
 
-    path_directory = 'result'
+    path_directory = 'results'
     isExist = os.path.exists(path_directory)
     if isExist:
         shutil.rmtree(path_directory)
@@ -97,16 +94,25 @@ if __name__ == '__main__':
 
     # execute task
     os.chdir("../datasets/stratifiedKfold/")
+
+    #folder smell
     for path in os.listdir():
-        os.chdir(path)
-        for dir in os.listdir():
-            print("DIR"+os.getcwd())
-            os.chdir(dir)
+        if '.DS_Store' not in path:
+            os.chdir(path)
 
-            print("AfTERCHDIR"+os.getcwd())
-            with open("../../../../EDT/result/" + path[13:-4] + '.txt', 'w+') as file:
-                execute_task(path, file)
+            #create directory with smell name to store results
+            path_directory = '../../../EDT/results/'+path
+            isExist = os.path.exists(path_directory)
+            if isExist:
+                shutil.rmtree(path_directory)
+            os.mkdir(path_directory)
+
+            #folder num fold
+            for dir in os.listdir():
+                if '.DS_Store' not in dir:
+                    os.chdir(dir)
+                    with open("../../../../EDT/results/" + path +'/' + dir + '.txt', 'w+') as file:
+                        execute_task(file)
+                    os.chdir("..")
             os.chdir("..")
-
-        os.chdir("..")
     os.chdir("../..")
