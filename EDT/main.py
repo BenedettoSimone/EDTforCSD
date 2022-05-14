@@ -11,12 +11,17 @@ from genetic_algorithm import GeneticAlgorithm
 
 
 def execute_task(dataset_path, log_file):
-    dataset = pd.read_csv(dataset_path)
+    train_set_over = pd.read_csv("train_set_oversampled.csv")
+    X_train = train_set_over.iloc[:, :-1]
+    y_train = train_set_over.iloc[:, -1:]
 
-    X = dataset.iloc[:, :-1]
-    y = dataset.iloc[:, -1:]
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.4, random_state=42)
+    test_set= pd.read_csv("test_set.csv")
+    X_test = test_set.iloc[:, 1:-1]
+    y_test = test_set.iloc[:, -1:]
+
+
+
     print("\u2501" * 50, colorama.Style.BRIGHT, colorama.Fore.YELLOW)
     print(log_file.name[17:-4])
 
@@ -74,8 +79,8 @@ def execute_task(dataset_path, log_file):
         log_file.write("F-measure: {}\n".format(F1_measure))
         log_file.write("=" * 200)
         log_file.write(best_tree.__str__(feature_names=X_train.columns.values.tolist(),
-                                         class_names=["NOT " + y.columns.values.tolist()[0],
-                                                      y.columns.values.tolist()[0]]))
+                                         class_names=["NOT " + y_train.columns.values.tolist()[0],
+                                                      y_train.columns.values.tolist()[0]]))
 
 
 def get_fitness(tree):
@@ -91,8 +96,17 @@ if __name__ == '__main__':
     os.mkdir(path_directory)
 
     # execute task
-    os.chdir("../datasets/oversampling/")
+    os.chdir("../datasets/stratifiedKfold/")
     for path in os.listdir():
-        with open("../../EDT/result/" + path[13:-4] + '.txt', 'w+') as file:
-            execute_task(path, file)
+        os.chdir(path)
+        for dir in os.listdir():
+            print("DIR"+os.getcwd())
+            os.chdir(dir)
+
+            print("AfTERCHDIR"+os.getcwd())
+            with open("../../../../EDT/result/" + path[13:-4] + '.txt', 'w+') as file:
+                execute_task(path, file)
+            os.chdir("..")
+
+        os.chdir("..")
     os.chdir("../..")
