@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from genetic_algorithm import GeneticAlgorithm
 
 
-def execute_task(log_file):
+def execute_task(log_file, path, dir):
     train_set_over = pd.read_csv("train_set_oversampled.csv")
     X_train = train_set_over.iloc[:, :-1]
     y_train = train_set_over.iloc[:, -1:]
@@ -22,7 +22,7 @@ def execute_task(log_file):
     y_test = test_set.iloc[:, -1:]
 
     print("\u2501" * 50, colorama.Style.BRIGHT, colorama.Fore.YELLOW)
-    print(log_file.name[24:-6] + ' - Fold ' + log_file.name[34:-4])
+    print(path + ' - Fold ' + dir)
 
     print("Train size:", len(X_train), ", Test size:", len(X_test), colorama.Style.NORMAL, colorama.Fore.RESET)
     print("\u2501" * 50)
@@ -85,47 +85,50 @@ def execute_task(log_file):
 def get_fitness(tree):
     return tree.get_score()
 
-def get_f_measure():
 
+def get_f_measure(report_file):
     os.chdir("EDT/results")
     for dir in os.listdir():
-        f_smell = []
-        f_not_smell = []
-        os.chdir(dir)
-        for file in os.listdir():
+        if '.txt' not in dir:
+            f_smell = []
+            f_not_smell = []
+            os.chdir(dir)
+            for file in os.listdir():
 
-            file = open(file, "r")
-            lines = file.readlines()
-            file.close()
+                file = open(file, "r")
+                lines = file.readlines()
+                file.close()
 
-            for line in lines:
-                if "F-measure" in line:
-                    line_to_save = line
+                for line in lines:
+                    if "F-measure" in line:
+                        line_to_save = line
 
-            splitted = line_to_save.split()
-            first_value = splitted[1][1:]
+                splitted = line_to_save.split()
+                first_value = splitted[1][1:]
 
-            if first_value == "0.":
-                first_value = first_value[:-1]
+                if first_value == "0.":
+                    first_value = first_value[:-1]
 
+                second_value = splitted[2]
 
-            splitted[2]
-            second_value = splitted[2]
+                if "]" in second_value:
+                    second_value = second_value[:-1]
 
-            if "]" in second_value:
-                second_value = second_value[:-1]
+                if second_value == "0.":
+                    second_value = second_value[:-1]
 
-            if second_value == "0.":
-                second_value = second_value[:-1]
+                f_not_smell.append(float(first_value))
+                f_smell.append(float(second_value))
 
-            f_not_smell.append(float(first_value))
-            f_smell.append(float(second_value))
-        print("=================================")
-        print(dir)
-        print("F-NOTSMELL-MEAN: ", mean(f_not_smell))
-        print("F-SMELL-MEAN: ", mean(f_smell))
+            print("=================================")
+            print(dir)
+            print("F-Measure: " + "[" + str(mean(f_not_smell)) + "," + str(mean(f_smell)) + "]")
 
-        os.chdir("..")
+            if report_file is not None:
+                report_file.write("\nSmell type: {}\n".format(dir))
+                report_file.write("F-Measure: {}\n".format("[" + str(mean(f_not_smell)) + "," + str(mean(f_smell)) + "]"))
+                report_file.write("=" * 200)
+            os.chdir("..")
     os.chdir("../..")
     print("================================")
 
@@ -141,30 +144,27 @@ if __name__ == '__main__':
     # execute task
     os.chdir("../datasets/stratifiedKfold/")
 
-    #folder smell
+    # folder smell
     for path in os.listdir():
         if '.DS_Store' not in path:
             os.chdir(path)
 
-            #create directory with smell name to store results
-            path_directory = '../../../EDT/results/'+path
+            # create directory with smell name to store results
+            path_directory = '../../../EDT/results/' + path
             isExist = os.path.exists(path_directory)
             if isExist:
                 shutil.rmtree(path_directory)
             os.mkdir(path_directory)
 
-            #folder num fold
+            # folder num fold
             for dir in os.listdir():
                 if '.DS_Store' not in dir:
                     os.chdir(dir)
-                    with open("../../../../EDT/results/" + path +'/' + dir + '.txt', 'w+') as file:
-                        execute_task(file)
+                    with open("../../../../EDT/results/" + path + '/' + dir + '.txt', 'w+') as file:
+                        execute_task(file, path, dir)
                     os.chdir("..")
             os.chdir("..")
     os.chdir("../..")
 
-    get_f_measure()
-
-
-
-
+    with open("EDT/results/final_results.txt", 'w+') as report_file:
+        get_f_measure(report_file)
