@@ -26,7 +26,7 @@ def execute_task(log_file, path, dir):
     print("\u2501" * 50)
 
     # create Genetic algorithm
-    genetic_algorithm = GeneticAlgorithm(population_size=4, n_epochs=1, min_depth=3, max_depth=5)
+    genetic_algorithm = GeneticAlgorithm(population_size=20, n_epochs=10, min_depth=3, max_depth=15)
 
     # find population of best individuals
     best_individuals = genetic_algorithm.fit(X_train, y_train, 10)

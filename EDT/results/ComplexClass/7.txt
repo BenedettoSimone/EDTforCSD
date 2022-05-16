@@ -1,40 +1,60 @@
 ========================================================================================================================================================================================================
-FITNESS 0.5088515068987828
-Accuracy score in TRAIN set: 0.5644964716149321
-Accuracy score in TEST set: 0.15397104586659452
-Precision: [0.15328368 1.        ]
-Recall: [1.00000000e+00 9.58619588e-04]
-F-measure: [0.2658213 0.0019154]
-========================================================================================================================================================================================================|--- M_TextualCohesion>=0.9668593906670875
-|--- M_WLOCNAMM>=265.0640182148344
-|	|--- M_PMMM>=0.1837756676111294
+FITNESS 0.8220766314078933
+Accuracy score in TRAIN set: 0.9111885165736296
+Accuracy score in TEST set: 0.8503585441753484
+Precision: [0.85023697 1.        ]
+Recall: [1.         0.00539568]
+F-measure: [0.91905738 0.01073345]
+========================================================================================================================================================================================================|--- M_LOCNAMM>=428.804761927172
+|--- M_NOPA>=792.016531527766
+|	|--- M_LCOM>=15327.581714035145
 |	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_NOPA>=792.016531527766
+|	|	|	|--- M_LCOM>=15327.581714035145
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_TextualEntropy>=0.9064276773069683
+|	|	|	|	|	|--- M_FanIn>=31228.79881952379
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--- M_CYCLO>=1149.0581159132203
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_NOA>=667.0906176592102
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_TextualEntropy>=0.9242925194437492
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|	|--- M_CYCLO>=87.73966992509574
 |	|	|--$  Class: ComplexClass
-|	|--- M_TextualCohesion>=0.26511277041685766
-|	|	|--- M_WLOCNAMM>=85.76902151502411
-|	|	|	|--$  Class: ComplexClass
-|	|	|	|--- M_TextualCohesion>=0.4396045092379647
-|	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|--$  Class: NOT ComplexClass
-|--- M_NOA>=989.5638245017578
-|	|--- M_LCOM>=23190.514910630533
-|	|	|--- M_PRB>=0.6503998689669617
-|	|	|	|--- M_PMMM>=0.1837756676111294
-|	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|	|--- M_NOM>=151.06352703578636
-|	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|--- M_LCOM>=18868.80014397412
-|	|	|	|--$  Class: ComplexClass
+|	|	|--$  Class: ComplexClass
+|--- M_ELOC>=2344.2259857531035
+|	|--- M_CBO>=33.09394595918872
+|	|	|--- M_LCOM>=15327.581714035145
 |	|	|	|--$  Class: NOT ComplexClass
-|	|--- M_NOM>=180.64233716324148
+|	|	|	|--- M_TextualEntropy>=0.9064276773069683
+|	|	|	|	|--- M_FanIn>=31228.79881952379
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_CYCLO>=1149.0581159132203
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_NOA>=667.0906176592102
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: ComplexClass
 |	|	|--$  Class: ComplexClass
-|	|	|--- M_PRB>=3.610522399599772
-|	|	|	|--- M_TextualCohesion>=0.6777040751545862
-|	|	|	|	|--$  Class: ComplexClass
+|	|--- M_TextualEntropy>=0.32067926378689376
+|	|	|--- M_NOC>=43.52908175358344
+|	|	|	|--- M_ELOC>=2428.1946277827274
 |	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|--- M_PRB>=1.859979244810297
+|	|	|	|	|--- M_WLOCNAMM>=260.78433023801205
+|	|	|	|	|	|--- M_LCOM>=58609.824758913135
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_CBO>=77.91597903586822
 |	|	|	|	|--$  Class: ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--- M_WLOCNAMM>=16.026598011859104
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_NOC>=40.269929746031835
+|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: ComplexClass

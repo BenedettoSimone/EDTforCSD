@@ -1,44 +1,502 @@
 ========================================================================================================================================================================================================
-FITNESS 0.4445754653104828
-Accuracy score in TRAIN set: 0.4995711770812958
-Accuracy score in TEST set: 0.9991882018671358
-Precision: [1. 0.]
-Recall: [0.9991882 0.       ]
-F-measure: [0.99959394 0.        ]
-========================================================================================================================================================================================================|--- M_CBO>=70.140636921131
-|--- M_NOM>=102.26058242464582
-|	|--- M_NOC>=98.10576308947039
-|	|	|--- M_NOM>=212.95687212247688
-|	|	|	|--- M_NOC>=42.182466262720006
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|	|--- M_WLOCNAMM>=15.488910177649327
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|--$  Class: NOT ComplexClass
-|	|--- M_TextualCohesion>=0.6926557102225014
-|	|	|--- M_DIT>=1.3715803393602726
-|	|	|	|--- M_TextualEntropy>=0.4513356398358438
-|	|	|	|	|--$  Class: ComplexClass
+FITNESS 0.8013082108304119
+Accuracy score in TRAIN set: 0.991220414980214
+Accuracy score in TEST set: 0.9079962116087134
+Precision: [0.90792146 1.        ]
+Recall: [1.         0.00874636]
+F-measure: [0.95173882 0.01734104]
+========================================================================================================================================================================================================|--- M_ELOC>=3169.75224877355
+|--- M_TextualEntropy>=0.10493006376941652
+|	|--- M_FanIn>=24242.720673442556
+|	|	|--- M_NOA>=188.0034139506081
+|	|	|	|--- M_LCOM>=4851.029706107127
 |	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_NOPA>=16.235608850147017
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_ELOC>=1513.0847104352642
+|	|	|	|	|	|	|--- M_LCOM>=27899.43045479622
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|--- M_NOC>=59.400605044454736
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_PMMM>=0.453859219848058
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--- M_TextualEntropy>=0.8394748894986915
+|	|	|	|	|	|	|	|--- M_FanIn>=6470.982957799134
+|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_NOC>=53.33949244903414
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_LOC>=3304.278718726869
+|	|	|	|	|	|	|	|	|--- M_NOA>=169.16735748192949
+|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.07935381369619833
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=5.828261433395992
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=138.34691685995432
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.638710110877768
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.1803290642532696
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=3643.1856698352267
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=21333.24244999716
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_DIT>=1.347990320272936
+|	|	|	|	|	|	|	|	|	|--- M_FanIn>=11372.062453322718
+|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.6591408067915423
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=10.293594592818744
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.8681988105353059
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=86.0206587154451
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=65684.06226328418
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_ELOC>=5255.962164609244
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=6755.931212728875
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=351.7631364224851
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=103.30078914541771
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=21.313303716617412
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=3272.801997523435
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_PRB>=0.0926771294130071
+|	|	|	|	|--- M_TextualEntropy>=0.369059716752058
+|	|	|	|	|	|--- M_FanIn_1>=804.8132871005213
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--- M_CYCLO>=39.10448582628487
+|	|	|	|	|	|	|--- M_FanIn>=26845.237597570725
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.025946427455855854
+|	|	|	|	|	|	|	|	|--- M_LCOM>=37628.881695964126
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=8789.246401422506
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=3164.5367733132275
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.2492152765393518
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1020.547656103423
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1556.961118089391
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.381852774236108
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=2595.377700901138
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=32.11204588285368
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=120.60321340788344
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=199.26082473803595
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_CBO>=2.704143218855104
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_NOMNAMM>=173.95854227507644
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_CYCLO>=916.0752044507881
 |	|	|	|--$  Class: ComplexClass
-|	|	|--- M_LOC>=617.8576433785317
-|	|	|	|--- M_LCOM>=35255.45438359065
+|	|	|	|--- M_TextualEntropy>=0.6234902766005775
+|	|	|	|	|--- M_NOC>=33.476058886890556
+|	|	|	|	|	|--- M_NOM>=260.44257550996684
+|	|	|	|	|	|	|--- M_LOCNAMM>=1576.5008099119912
+|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|--- M_CYCLO>=603.4546314386172
+|	|	|	|	|	|	|	|	|	|--- M_FanIn>=29818.23461380607
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.6356253769155745
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=227.3361130933709
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_CBO>=67.4248988181142
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_TextualEntropy>=0.2753583947939821
+|	|	|	|	|	|	|--- M_CYCLO>=250.05022353286972
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_WLOCNAMM>=93.51454641743385
+|	|	|	|	|	|	|	|	|--- M_LOC>=1728.9750404204792
+|	|	|	|	|	|	|	|	|	|--- M_NOM>=173.66271943905804
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=30654.351107620965
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1005.0934328274109
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=196.87126533776794
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=13144.830591389698
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=0.03349046089736074
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=211.94011368278862
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_PRB>=0.46737897568728703
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.24315734610158657
+|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=57011.26989218102
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=415.58027018283457
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_TextualEntropy>=0.688884725096099
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
 |	|	|	|	|--$  Class: NOT ComplexClass
+|	|--- M_NOPA>=164.7308940599761
+|	|	|--- M_TextualCohesion>=0.791493899390779
+|	|	|	|--- M_NOM>=93.33068733053751
+|	|	|	|	|--- M_LOC>=2835.9822497349073
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--- M_NOPA>=41.32274176634587
+|	|	|	|	|	|--- M_CBO>=15.708816535219029
+|	|	|	|	|	|	|--- M_WLOCNAMM>=149.52849228184868
+|	|	|	|	|	|	|	|--- M_NOM>=265.27735760868705
+|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=232.7906525918524
+|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.6730467953551383
+|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.2653624665640846
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=48.665578160294174
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=4832.789369200981
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.22780567444791888
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=261.33700777007766
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.3080282841171613
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=1493.9234424797328
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=166.28597590170656
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_WMC>=922.1770352480306
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.25944481027933763
+|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1300.520510134925
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_DIT>=1.0192654219749766
+|	|	|	|	|	|	|	|	|	|--- M_ELOC>=1773.755294138627
+|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.9120736652367305
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1343.5784713602663
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.5928358340679568
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=81.2718954832118
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_FanIn>=16119.438220954118
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_PRB>=0.8937945875900106
+|	|	|	|	|	|	|	|	|	|--- M_NOA>=144.171349553724
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_FanIn>=18136.472802736316
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=119.06192509160088
+|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=1194.7186265553096
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=866.5237790904418
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.0532390099011735
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=135.84326190269218
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_NOM>=326.54050797973247
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_NOPA>=18.53521697320597
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|--- M_NOC>=65.73617745462766
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_WLOCNAMM>=118.20145728968724
+|	|	|	|--- M_NOC>=97.04004846046101
+|	|	|	|	|--- M_LOCNAMM>=2671.385609017051
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--- M_DIT>=1.064020772649553
+|	|	|	|	|	|	|--- M_NOM>=247.97917099713135
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_FanIn>=25847.47391664182
+|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_NOM>=97.6434269847861
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--- M_NOM>=362.23796687578783
+|	|	|	|	|	|--- M_NOC>=118.40572844769768
+|	|	|	|	|	|	|--- M_PMMM>=0.9580499716253291
+|	|	|	|	|	|	|	|--- M_NOPA>=233.23135822294878
+|	|	|	|	|	|	|	|	|--- M_WMC>=1281.3462223230624
+|	|	|	|	|	|	|	|	|	|--- M_NOPA>=23.814055260348447
+|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=3615.103110334378
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=20797.531088155254
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=424.95627324560786
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=121.20925502196579
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=709.5985662020132
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.007912236536224304
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_LOC>=2433.1621836077306
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_PRB>=0.24391378931823127
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_NOPA>=67.55546755810589
+|	|	|	|	|	|	|	|	|	|--- M_LCOM>=24620.046358118023
+|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=69.2392269180941
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=155.89420898245905
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=0.8477118104355763
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=277.52641442284346
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=518.0403327498615
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=26.78350889814701
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.8759209956178572
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=14989.102969380467
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_WLOCNAMM>=1.5217603161367412
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.6773372095797353
+|	|	|	|	|	|	|	|	|--- M_FanIn_1>=1543.4904849040568
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.9459012071356732
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=216.01671810539264
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.24083649979516397
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=75.02873522210487
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=10.42527464690545
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=365.2130201916426
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=3840.5481391971744
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_NOPA>=227.26219459067227
+|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=2118.9427636274677
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=121.40034854111865
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.9225662251129412
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=124.52899371222466
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.7532817712048536
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_WMC>=653.7012986659767
+|	|	|	|	|	|--- M_DIT>=1.3842342682107494
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|--- M_LCOM>=66742.68685691785
+|	|--- M_TextualEntropy>=0.5951361009505648
+|	|	|--- M_PMMM>=0.06009122341019968
+|	|	|	|--- M_PMMM>=0.22307406749054592
+|	|	|	|	|--- M_WLOCNAMM>=153.23872555202263
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_LCOM>=60139.98859260119
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_TextualCohesion>=0.6142955922878441
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_LOC>=642.1376575152116
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_LCOM>=22178.53261701465
+|	|	|	|	|	|	|--- M_LOC>=1564.172257650582
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--- M_NOM>=362.23796687578783
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_WMC>=653.7012986659767
+|	|	|	|	|	|--- M_DIT>=1.3842342682107494
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_NOPA>=180.5402281786523
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--- M_DIT>=1.785417241885585
+|	|	|	|	|--- M_TextualCohesion>=0.10906989623775065
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--- M_TextualEntropy>=0.3400439131184923
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
 |	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|--- M_NOMNAMM>=257.3640423550497
+|	|--- M_LOC>=629.9552616255074
+|	|	|--- M_NOC>=118.40572844769768
+|	|	|	|--- M_PMMM>=0.9580499716253291
+|	|	|	|	|--- M_NOPA>=233.23135822294878
+|	|	|	|	|	|--- M_WMC>=1281.3462223230624
+|	|	|	|	|	|	|--- M_NOPA>=23.814055260348447
+|	|	|	|	|	|	|	|--- M_ELOC>=3615.103110334378
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_FanIn>=20797.531088155254
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_WMC>=424.95627324560786
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_NOC>=121.20925502196579
+|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=709.5985662020132
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.007912236536224304
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_LOC>=2433.1621836077306
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--- M_PRB>=0.24391378931823127
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--- M_NOPA>=67.55546755810589
+|	|	|	|	|	|	|--- M_LCOM>=24620.046358118023
+|	|	|	|	|	|	|	|--- M_CBO>=69.2392269180941
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=155.89420898245905
+|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=0.8477118104355763
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=277.52641442284346
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=518.0403327498615
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=26.78350889814701
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.8759209956178572
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=14989.102969380467
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--- M_WLOCNAMM>=1.5217603161367412
 |	|	|	|	|--$  Class: ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
-|--- M_ELOC>=4596.757316309524
-|	|--- M_WLOCNAMM>=165.50712878494366
-|	|	|--$  Class: NOT ComplexClass
-|	|	|--$  Class: NOT ComplexClass
-|	|--- M_CBO>=110.39448666156491
-|	|	|--$  Class: NOT ComplexClass
-|	|	|--- M_FanIn>=17543.135445199405
-|	|	|	|--- M_FanIn_1>=1324.5933700631726
-|	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|	|--$  Class: ComplexClass
-|	|	|	|--- M_TextualEntropy>=0.4884808014625506
-|	|	|	|	|--$  Class: NOT ComplexClass
-|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_TextualCohesion>=0.6773372095797353
+|	|	|	|	|	|--- M_FanIn_1>=1543.4904849040568
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--- M_DIT>=1.9459012071356732
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_NOPA>=216.01671810539264
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.24083649979516397
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=75.02873522210487
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=10.42527464690545
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=365.2130201916426
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=3840.5481391971744
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_NOPA>=227.26219459067227
+|	|	|	|	|	|	|--- M_LOCNAMM>=2118.9427636274677
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_CBO>=121.40034854111865
+|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|--- M_PMMM>=0.9225662251129412
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|	|--- M_CBO>=124.52899371222466
+|	|	|	|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--- M_TextualCohesion>=0.7532817712048536
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--- M_DIT>=1.0634619143857442
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass

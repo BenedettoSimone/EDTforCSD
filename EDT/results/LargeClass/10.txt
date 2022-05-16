@@ -1,34 +1,60 @@
 ========================================================================================================================================================================================================
-FITNESS 0.44495529868605227
-Accuracy score in TRAIN set: 0.49995484715762856
-Accuracy score in TEST set: 0.9986470031118928
-Precision: [0.99986454 0.        ]
-Recall: [0.99878214 0.        ]
-F-measure: [0.99932304 0.        ]
-========================================================================================================================================================================================================|--- M_DIT>=1.560596262982207
-|--- M_CYCLO>=793.3848145972985
-|	|--- M_PRB>=1.7089866401463536
-|	|	|--$  Class: LargeClass
-|	|	|--$  Class: LargeClass
-|	|--- M_LCOM>=18270.321217457215
-|	|	|--$  Class: LargeClass
-|	|	|--- M_LOC>=816.9525631356008
-|	|	|	|--$  Class: NOT LargeClass
-|	|	|	|--$  Class: NOT LargeClass
-|--- M_LOCNAMM>=151.89512627691695
-|	|--- M_WMC>=683.3197129877626
+FITNESS 0.8456303336795051
+Accuracy score in TRAIN set: 0.9753841754338436
+Accuracy score in TEST set: 0.9349208496820457
+Precision: [0.93484151 1.        ]
+Recall: [1.         0.01836735]
+F-measure: [0.9663236  0.03607214]
+========================================================================================================================================================================================================|--- M_ELOC>=412.6760692564383
+|--- M_FanIn>=10068.042015030524
+|	|--- M_PRB>=0.9863214022442892
 |	|	|--$  Class: NOT LargeClass
-|	|	|--$  Class: NOT LargeClass
-|	|--- M_TextualEntropy>=0.27849958623990884
-|	|	|--- M_LCOM>=12583.250471159783
+|	|	|--$  Class: LargeClass
+|	|--- M_LOCNAMM>=1260.6542719395636
+|	|	|--- M_LCOM>=72138.12314762347
 |	|	|	|--$  Class: NOT LargeClass
-|	|	|	|--- M_NOPA>=74.23694956749998
-|	|	|	|	|--$  Class: NOT LargeClass
-|	|	|	|	|--$  Class: NOT LargeClass
-|	|	|--- M_WMC>=1203.3847565401277
-|	|	|	|--- M_NOM>=147.3460537974985
+|	|	|	|--$  Class: LargeClass
+|	|	|--- M_TextualCohesion>=0.10937539773876725
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_CYCLO>=1192.2376811987726
 |	|	|	|	|--$  Class: LargeClass
 |	|	|	|	|--$  Class: NOT LargeClass
-|	|	|	|--- M_NOMNAMM>=85.4190507891755
+|--- M_NOM>=236.96409154183115
+|	|--- M_NOC>=2.693388919946275
+|	|	|--$  Class: LargeClass
+|	|	|--$  Class: LargeClass
+|	|--- M_NOPA>=144.5406307396257
+|	|	|--- M_NOC>=74.83847564288813
+|	|	|	|--- M_DIT>=1.711900897413761
+|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--- M_LCOM>=66054.114517871
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_PRB>=1.5518785227595708
+|	|	|	|	|--- M_TextualEntropy>=0.3780805811567811
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--- M_TextualCohesion>=0.07944851240445527
+|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|--$  Class: NOT LargeClass
 |	|	|	|	|--$  Class: NOT LargeClass
-|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|--- M_FanIn>=21059.095298940916
+|	|	|	|--$  Class: LargeClass
+|	|	|	|--- M_CYCLO>=1326.8217155592372
+|	|	|	|	|--- M_NOA>=470.769931977503
+|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|--- M_WLOCNAMM>=161.58642423442393
+|	|	|	|	|	|--- M_ELOC>=5125.306747887973
+|	|	|	|	|	|	|--- M_ELOC>=4638.159869688929
+|	|	|	|	|	|	|	|--- M_LOC>=1657.1434636928243
+|	|	|	|	|	|	|	|	|--- M_NOPA>=568.6001507311416
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|	|	|	|--- M_LOC>=1364.0454769640905
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=0.7614535316382189
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: LargeClass
+|	|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|	|--$  Class: NOT LargeClass
+|	|	|	|	|	|--$  Class: NOT LargeClass
