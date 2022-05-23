@@ -1,0 +1,44 @@
+========================================================================================================================================================================================================
+FITNESS 0.6765050634824668
+Accuracy score in TRAIN set: 0.7843485489721886
+Accuracy score in TEST set: 0.918143688269517
+Precision: [0.91851449 0.85      ]
+Recall: [0.99911216 0.05371248]
+F-measure: [0.95711957 0.10104012]
+========================================================================================================================================================================================================|--- M_WMC>=944.5164174057039
+|--- M_NOC>=69.30707522947424
+|	|--- M_ELOC>=39.53426886899721
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_NOMNAMM>=357.761927433746
+|	|	|--- M_CBO>=8.908233852743908
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_TextualCohesion>=0.26089620412285086
+|	|	|	|--- M_LOCNAMM>=2613.3900886579404
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_NOPA>=462.5486193595925
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_WMC>=696.2382830699044
+|	|	|	|	|	|	|--- M_CYCLO>=400.14665061606036
+|	|	|	|	|	|	|	|--- M_CYCLO>=1450.079048948089
+|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.6043743479135556
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|--- M_FanIn_1>=48.92262195317464
+|	|--- M_NOMNAMM>=134.99303517474988
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|	|--- M_CBO>=118.99950803601658
+|	|	|--- M_TextualEntropy>=0.04777615322943886
+|	|	|	|--- M_LOC>=718.0434182581231
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--- M_NOC>=78.15763185481754
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode

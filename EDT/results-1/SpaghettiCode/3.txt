@@ -1,0 +1,920 @@
+========================================================================================================================================================================================================
+FITNESS 0.5259982617896011
+Accuracy score in TRAIN set: 0.7434325876662636
+Accuracy score in TEST set: 0.9613042890001353
+Precision: [0.96354238 0.55      ]
+Recall: [0.99746515 0.07586207]
+F-measure: [0.98021035 0.13333333]
+========================================================================================================================================================================================================|--- M_LOCNAMM>=402.7098831348086
+|--- M_DIT>=1.7010570802134761
+|	|--- M_NOPA>=89.36857574255485
+|	|	|--- M_NOMNAMM>=17.8404606440607
+|	|	|	|--- M_LOC>=1554.1744685615745
+|	|	|	|	|--- M_WMC>=1359.2296154938683
+|	|	|	|	|	|--- M_WLOCNAMM>=185.20193546000544
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_NOC>=104.6183373624089
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|--- M_DIT>=1.2916066985277164
+|	|	|	|	|	|	|	|--- M_FanIn>=18403.1430864897
+|	|	|	|	|	|	|	|	|--- M_NOC>=11.029692468802986
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--- M_NOM>=230.68862921056362
+|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_ELOC>=2188.908374692598
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_WMC>=788.1453238982183
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--- M_NOA>=891.707574117731
+|	|	|	|	|	|	|	|	|--- M_DIT>=1.5593514670754591
+|	|	|	|	|	|	|	|	|	|--- M_NOM>=379.5485231511509
+|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=85.57424012347258
+|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=113.15011013764546
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=94.63367230188973
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.9509883022888094
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=359.87853736194376
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=183.24255804726164
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=52.8931749305048
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=77.65553036763967
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4665.9907432562595
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=523.8709096894977
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7952106453362181
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.7997153455589414
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=34.62663882541649
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=4816.9632079235225
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1490.5868383817017
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=45.71281468927261
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=54979.02696318664
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=348.155192693884
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=65.88694133545347
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.08041718983745771
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.6731973771426188
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1206.8091480667201
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=134.96048416517772
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=303.74230072536017
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.81607863063689
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=38.199231993885896
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=920.2281326481743
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.4214580326150443
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.1437914756656933
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=217.54731921618244
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=128.77359110727576
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=183.8912640549801
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.2405259087670174
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=613.8420891099526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=136.46394826080513
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.19137108614121495
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=73.02719941338952
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=673.5165328001027
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=1889.9616440218692
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=221.09443852435294
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4768.925233630249
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=368.619894005077
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=261.09838697513214
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=753.373954048526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=724.9809131206869
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=122.42815487704513
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.17969545453240565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=1023.977853462116
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=879.2334424721168
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=421.08996796337317
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=15520.104517097705
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=81.4777859027036
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=49.249642173472985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.23266864371383
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=495.8596117677465
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.9816931216389224
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.17444697950712
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.995535941952375
+|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=81.91743189088037
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=844.9008383352585
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_NOM>=287.3833738352004
+|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=2.6972098609882083
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=338.23850479150957
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=575.8702539045198
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=87.60098608916924
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.6668745295366103
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=4369.446193597536
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1078.9583492008096
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.8607711867343154
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1665.0881293384339
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=98.441765499851
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=364.4945439043428
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=1527.192176854163
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=3981.4273424974654
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=17379.792200637265
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=4537.2459420506975
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=10763.941378336147
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=3869.2075436000273
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.12110913470662588
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=59.0400670825324
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=31822.453016851956
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=265.93821622668565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.9244894976426845
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=104.89670169230985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=86.25156095964451
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=32.73986253032347
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1883.0337426488602
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=26108.9533059023
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=104.36221175326062
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=629.0041468598438
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=24783.67273560556
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=867.4286573455449
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=5182.020814682206
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=170.85016890176786
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=150.06654058012035
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=2117.6065137268693
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_CYCLO>=1423.6326070489808
+|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7881830644140643
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=127.03380307727684
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_TextualCohesion>=0.3344621008401638
+|	|	|	|	|	|--- M_NOM>=51.4139706305715
+|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_ELOC>=2255.120128560903
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_NOPA>=281.2276789190907
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_TextualEntropy>=0.382624674708706
+|	|	|	|	|--- M_FanIn>=13800.265813748973
+|	|	|	|	|	|--- M_ELOC>=2357.986861136957
+|	|	|	|	|	|	|--- M_ELOC>=1082.020160000304
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--- M_LOCNAMM>=4386.626674341696
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|	|--- M_ELOC>=2357.986861136957
+|	|	|--- M_ELOC>=1082.020160000304
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--$  Class: SpaghettiCode
+|--- M_NOMNAMM>=17.8404606440607
+|	|--- M_LOC>=1554.1744685615745
+|	|	|--- M_WMC>=1359.2296154938683
+|	|	|	|--- M_WLOCNAMM>=185.20193546000544
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_NOC>=104.6183373624089
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|--- M_DIT>=1.2916066985277164
+|	|	|	|	|	|--- M_FanIn>=18403.1430864897
+|	|	|	|	|	|	|--- M_NOC>=11.029692468802986
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_NOM>=230.68862921056362
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--- M_ELOC>=2188.908374692598
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_WMC>=788.1453238982183
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--- M_NOA>=891.707574117731
+|	|	|	|	|	|	|--- M_DIT>=1.5593514670754591
+|	|	|	|	|	|	|	|--- M_NOM>=379.5485231511509
+|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=85.57424012347258
+|	|	|	|	|	|	|	|	|	|--- M_CBO>=113.15011013764546
+|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=94.63367230188973
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.9509883022888094
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=359.87853736194376
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=183.24255804726164
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=52.8931749305048
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=77.65553036763967
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4665.9907432562595
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=523.8709096894977
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7952106453362181
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.7997153455589414
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=34.62663882541649
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=4816.9632079235225
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1490.5868383817017
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=45.71281468927261
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=54979.02696318664
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=348.155192693884
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=65.88694133545347
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.08041718983745771
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.6731973771426188
+|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1206.8091480667201
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=134.96048416517772
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=303.74230072536017
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.81607863063689
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=38.199231993885896
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=920.2281326481743
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.4214580326150443
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.1437914756656933
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=217.54731921618244
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=128.77359110727576
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=183.8912640549801
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.2405259087670174
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=613.8420891099526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=136.46394826080513
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.19137108614121495
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=73.02719941338952
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=673.5165328001027
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=1889.9616440218692
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=221.09443852435294
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4768.925233630249
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=368.619894005077
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=261.09838697513214
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=753.373954048526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=724.9809131206869
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=122.42815487704513
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.17969545453240565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=1023.977853462116
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=879.2334424721168
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=421.08996796337317
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=15520.104517097705
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=81.4777859027036
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=49.249642173472985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.23266864371383
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=495.8596117677465
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.9816931216389224
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.17444697950712
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_PRB>=3.995535941952375
+|	|	|	|	|	|	|	|	|	|--- M_CBO>=81.91743189088037
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_NOA>=844.9008383352585
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--- M_NOM>=287.3833738352004
+|	|	|	|	|	|	|	|	|--- M_PRB>=2.6972098609882083
+|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=338.23850479150957
+|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=575.8702539045198
+|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=87.60098608916924
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.6668745295366103
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=4369.446193597536
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1078.9583492008096
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.8607711867343154
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1665.0881293384339
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=98.441765499851
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=364.4945439043428
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_NOA>=1527.192176854163
+|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=3981.4273424974654
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=17379.792200637265
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=4537.2459420506975
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=10763.941378336147
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=3869.2075436000273
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.12110913470662588
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=59.0400670825324
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=31822.453016851956
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=265.93821622668565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.9244894976426845
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=104.89670169230985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=86.25156095964451
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_NOM>=32.73986253032347
+|	|	|	|	|	|	|	|	|	|--- M_LOC>=1883.0337426488602
+|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=26108.9533059023
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=104.36221175326062
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=629.0041468598438
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=24783.67273560556
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=867.4286573455449
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=5182.020814682206
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=170.85016890176786
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=150.06654058012035
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_ELOC>=2117.6065137268693
+|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--- M_CYCLO>=1423.6326070489808
+|	|	|	|	|	|	|	|--- M_PMMM>=0.7881830644140643
+|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--- M_NOMNAMM>=127.03380307727684
+|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_TextualCohesion>=0.3344621008401638
+|	|	|	|--- M_NOM>=51.4139706305715
+|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--- M_NOPA>=89.36857574255485
+|	|	|	|	|	|	|--- M_NOA>=891.707574117731
+|	|	|	|	|	|	|	|--- M_DIT>=1.5593514670754591
+|	|	|	|	|	|	|	|	|--- M_NOM>=379.5485231511509
+|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=85.57424012347258
+|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=113.15011013764546
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=94.63367230188973
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.9509883022888094
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=359.87853736194376
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=183.24255804726164
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=52.8931749305048
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=77.65553036763967
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4665.9907432562595
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=523.8709096894977
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7952106453362181
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.7997153455589414
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=34.62663882541649
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=4816.9632079235225
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1490.5868383817017
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=45.71281468927261
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=54979.02696318664
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=348.155192693884
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=65.88694133545347
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.08041718983745771
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.6731973771426188
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1206.8091480667201
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=134.96048416517772
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=303.74230072536017
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.81607863063689
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=38.199231993885896
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=920.2281326481743
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.4214580326150443
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.1437914756656933
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=217.54731921618244
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=128.77359110727576
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=183.8912640549801
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.2405259087670174
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=613.8420891099526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=136.46394826080513
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.19137108614121495
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=73.02719941338952
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=673.5165328001027
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=1889.9616440218692
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=221.09443852435294
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4768.925233630249
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=368.619894005077
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=261.09838697513214
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=753.373954048526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=724.9809131206869
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=122.42815487704513
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.17969545453240565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=1023.977853462116
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=879.2334424721168
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=421.08996796337317
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=15520.104517097705
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=81.4777859027036
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=49.249642173472985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.23266864371383
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=495.8596117677465
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.9816931216389224
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.17444697950712
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.995535941952375
+|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=81.91743189088037
+|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.1878520936329824
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=20062.75310988374
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=89.36857574255485
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=2357.986861136957
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=1082.020160000304
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=17.8404606440607
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1554.1744685615745
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1359.2296154938683
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=185.20193546000544
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=104.6183373624089
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.2916066985277164
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=18403.1430864897
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=11.029692468802986
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=230.68862921056362
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=2188.908374692598
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=788.1453238982183
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.3344621008401638
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=51.4139706305715
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=2255.120128560903
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=281.2276789190907
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.382624674708706
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=13800.265813748973
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=4386.626674341696
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=844.9008383352585
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.9937712217538188
+|	|	|	|	|	|	|	|	|	|--- M_PRB>=2.6972098609882083
+|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=338.23850479150957
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=575.8702539045198
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=87.60098608916924
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.6668745295366103
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=4369.446193597536
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1078.9583492008096
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.8607711867343154
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1665.0881293384339
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=98.441765499851
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=364.4945439043428
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=1527.192176854163
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=3981.4273424974654
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=17379.792200637265
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=4537.2459420506975
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=10763.941378336147
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOCNAMM>=3869.2075436000273
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.12110913470662588
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=59.0400670825324
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=31822.453016851956
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=265.93821622668565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.9244894976426845
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=104.89670169230985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=86.25156095964451
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_NOM>=32.73986253032347
+|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=1883.0337426488602
+|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=26108.9533059023
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=104.36221175326062
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=629.0041468598438
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=24783.67273560556
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn_1>=867.4286573455449
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=5182.020814682206
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=170.85016890176786
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=150.06654058012035
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=2117.6065137268693
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--- M_CYCLO>=1423.6326070489808
+|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7881830644140643
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=127.03380307727684
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_DIT>=1.2916066985277164
+|	|	|	|	|	|--- M_FanIn>=18403.1430864897
+|	|	|	|	|	|	|--- M_NOC>=11.029692468802986
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_NOM>=230.68862921056362
+|	|	|	|	|	|	|--- M_WLOCNAMM>=85.57424012347258
+|	|	|	|	|	|	|	|--- M_CBO>=113.15011013764546
+|	|	|	|	|	|	|	|	|--- M_NOM>=94.63367230188973
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.9509883022888094
+|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=359.87853736194376
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=183.24255804726164
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=52.8931749305048
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=77.65553036763967
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4665.9907432562595
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=523.8709096894977
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.7952106453362181
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.7997153455589414
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=34.62663882541649
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=4816.9632079235225
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=1490.5868383817017
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=45.71281468927261
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_LCOM>=54979.02696318664
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=348.155192693884
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=65.88694133545347
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.08041718983745771
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.6731973771426188
+|	|	|	|	|	|	|	|	|--- M_LOC>=1206.8091480667201
+|	|	|	|	|	|	|	|	|	|--- M_NOC>=134.96048416517772
+|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=303.74230072536017
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.81607863063689
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=38.199231993885896
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=920.2281326481743
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.4214580326150443
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PRB>=3.1437914756656933
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=217.54731921618244
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=128.77359110727576
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=183.8912640549801
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.2405259087670174
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_LOC>=613.8420891099526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_WLOCNAMM>=136.46394826080513
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.19137108614121495
+|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=73.02719941338952
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOA>=673.5165328001027
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=1889.9616440218692
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=221.09443852435294
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_ELOC>=4768.925233630249
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=368.619894005077
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=261.09838697513214
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=753.373954048526
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=724.9809131206869
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_CBO>=122.42815487704513
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.17969545453240565
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=1023.977853462116
+|	|	|	|	|	|	|	|	|	|	|	|--- M_CYCLO>=879.2334424721168
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--- M_WMC>=421.08996796337317
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_FanIn>=15520.104517097705
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOC>=81.4777859027036
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=49.249642173472985
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_PMMM>=0.23266864371383
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_NOPA>=495.8596117677465
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--- M_DIT>=1.9816931216389224
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|--- M_NOM>=49.17444697950712
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--- M_ELOC>=2188.908374692598
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--- M_ELOC>=2255.120128560903
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--- M_NOPA>=281.2276789190907
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_TextualEntropy>=0.382624674708706
+|	|	|--- M_FanIn>=13800.265813748973
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--- M_LOCNAMM>=4386.626674341696
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode

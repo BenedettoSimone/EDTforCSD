@@ -12,7 +12,6 @@ from sklearn.metrics import accuracy_score
 from generate_random_tree import generate_random_tree
 from tree import Leaf, Decision
 
-
 data_to_print = []
 SIZE_MATING_POOL = 0.2
 
@@ -41,8 +40,8 @@ class GeneticAlgorithm:
         # generate starting population
         print("\u2501" * 50)
         print("STARTING POPULATION")
-        if self._population_size<=1:
-            print(colorama.Style.BRIGHT,colorama.Fore.LIGHTRED_EX)
+        if self._population_size <= 1:
+            print(colorama.Style.BRIGHT, colorama.Fore.LIGHTRED_EX)
             print("\u2501" * 50)
             print("ALERT: POPULATION SIZE MUST BE AT LEAST 2")
             print("\u2501" * 50, colorama.Style.NORMAL, colorama.Fore.RESET)
@@ -229,6 +228,7 @@ class GeneticAlgorithm:
 
         return mutated_population
 
+    # function to compute height of tree
     def __compute_height(self, tree):
 
         if isinstance(tree, Leaf):

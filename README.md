@@ -34,12 +34,18 @@ If you want to perform other experiments use ``data_imputation.ipynb``
 
 
 ### Data balancing
-Because the dataset in unbalanced, we have applied the oversampling technique using *Synthetic Minority Oversampling Technique (SMOTE)* to create new artificial instances.
-Since our goal is to build ad-hoc classifiers for each type of code smell, oversampling was performed in order to obtain five datasets, one for each type of code smell.
+Because the dataset in unbalanced, we need to apply the oversampling technique. 
 
-You can find the five datasets in:
+
+
+Since our goal is to build ad-hoc classifiers for each type of code smell we used 5 datasets considering one smell for each dataset.
+
+Before applying oversampling, we performed Stratified K-Fold obtaining 10 folds for each dataset.
+Then, we applied oversampling on the generated training sets while leaving the test sets intact. To create new artificial instances, we used the Synthetic Minority Oversampling Technique (SMOTE). 
+
+You can find the five datasets, splitted in 10 folds, in:
 ```
-datasets/oversampling/
+datasets/stratifiedKfold/
 ```
 To perform data balancing use ``data_balancing.ipynb``
 

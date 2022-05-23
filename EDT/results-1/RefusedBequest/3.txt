@@ -1,0 +1,62 @@
+========================================================================================================================================================================================================
+FITNESS 0.6582532126124226
+Accuracy score in TRAIN set: 0.755811325871134
+Accuracy score in TEST set: 0.9568393992693817
+Precision: [0.95770065 0.53333333]
+Recall: [0.99901004 0.025     ]
+F-measure: [0.97791929 0.04776119]
+========================================================================================================================================================================================================|--- M_FanIn>=1760.3701884869108
+|--- M_LOCNAMM>=3938.6330585133824
+|	|--- M_WLOCNAMM>=90.01965216932246
+|	|	|--$  Class: RefusedBequest
+|	|	|--- M_FanIn>=7938.652510032845
+|	|	|	|--- M_PRB>=0.2930674937436022
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|--- M_LOC>=284.87038275943485
+|	|	|--- M_NOC>=71.6607097428443
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_LOC>=3410.5954185239925
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_NOPA>=456.01417170823976
+|	|	|	|--- M_FanIn_1>=165.00871006401138
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--- M_LOC>=894.417300746391
+|	|	|	|	|--- M_FanIn_1>=49.92897736924467
+|	|	|	|	|	|--- M_WLOCNAMM>=279.3384977906485
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|--- M_ELOC>=2683.0744446326535
+|	|--- M_WLOCNAMM>=36.73046807007255
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_FanIn_1>=1303.4753355208175
+|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|--- M_TextualEntropy>=0.6577694636861338
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_LCOM>=57261.931741320055
+|	|	|	|--- M_FanIn>=20588.114676682122
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--- M_FanIn_1>=971.0385928003167
+|	|	|	|	|	|--- M_WMC>=277.1554071114476
+|	|	|	|	|	|	|--- M_LOCNAMM>=2978.5940873511026
+|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|--- M_LCOM>=49155.23898718148
+|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_NOM>=25.672928176391117
+|	|	|	|	|--- M_PRB>=3.1908772405587125
+|	|	|	|	|	|--- M_WLOCNAMM>=128.09816123931657
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: NOT RefusedBequest

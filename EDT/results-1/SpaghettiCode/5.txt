@@ -1,0 +1,86 @@
+========================================================================================================================================================================================================
+FITNESS 0.4004318319226119
+Accuracy score in TRAIN set: 0.5054866989117291
+Accuracy score in TEST set: 0.017318360167771614
+Precision: [0.01197116 1.        ]
+Recall: [1.        0.0054772]
+F-measure: [0.02365909 0.01089473]
+========================================================================================================================================================================================================|--- M_PMMM>=0.9736607347279417
+|--- M_PRB>=2.8499925151863916
+|	|--- M_CYCLO>=963.4105041474113
+|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--- M_CBO>=28.960854773851523
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--- M_NOM>=113.90431771987232
+|	|	|	|	|--- M_PMMM>=0.6608334911413718
+|	|	|	|	|	|--- M_DIT>=1.1304987388151626
+|	|	|	|	|	|	|--- M_NOPA>=94.00261997964022
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|--- M_WMC>=452.7807511921204
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_NOA>=261.7127655007841
+|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_NOC>=109.18224857106385
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|--- M_WMCNAMM>=0.0
+|	|--- M_LCOM>=16694.493170173355
+|	|	|--- M_FanIn>=15566.772702540957
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--- M_LOC>=2958.7482297625793
+|	|	|	|	|--- M_DIT>=1.4048103116601092
+|	|	|	|	|	|--- M_NOPA>=636.2677260020014
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--- M_LOC>=2442.0131340150792
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_CBO>=8.982993666994677
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--- M_WMC>=353.8603127776793
+|	|	|	|	|	|--- M_NOA>=149.6740357279955
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|--- M_CBO>=41.255928390865684
+|	|	|	|	|	|	|--- M_DIT>=1.6922339778295408
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_FanIn>=12996.580304796249
+|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_WLOCNAMM>=206.20037446158358
+|	|	|	|--- M_LCOM>=28458.839618844257
+|	|	|	|	|--- M_CBO>=28.960854773851523
+|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--- M_NOM>=113.90431771987232
+|	|	|	|	|	|	|--- M_PMMM>=0.6608334911413718
+|	|	|	|	|	|	|	|--- M_DIT>=1.1304987388151626
+|	|	|	|	|	|	|	|	|--- M_NOPA>=94.00261997964022
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|--- M_WMC>=452.7807511921204
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_FanIn>=28868.86934022443
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|--- M_FanIn>=19959.47794314351
+|	|	|--$  Class: SpaghettiCode
+|	|	|--- M_NOC>=109.18224857106385
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode

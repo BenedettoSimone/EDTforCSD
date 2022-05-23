@@ -1,0 +1,62 @@
+========================================================================================================================================================================================================
+FITNESS 0.6617839710756253
+Accuracy score in TRAIN set: 0.7694787586622477
+Accuracy score in TEST set: 0.5958598295223921
+Precision: [0.59498305 1.        ]
+Recall: [1.         0.00532801]
+F-measure: [0.74606818 0.01059954]
+========================================================================================================================================================================================================|--- M_CYCLO>=1066.2112191511383
+|--- M_WMCNAMM>=0.0
+|	|--- M_PRB>=1.78490542261043
+|	|	|--- M_LOCNAMM>=1433.340079586469
+|	|	|	|--- M_TextualEntropy>=0.014399059965719555
+|	|	|	|	|--- M_LCOM>=14846.246571928166
+|	|	|	|	|	|--- M_LCOM>=36882.194592777465
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--- M_NOMNAMM>=53.72945533880161
+|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--- M_NOA>=848.2243016257586
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--- M_PRB>=1.9308867377271883
+|	|	|	|	|	|--- M_WLOCNAMM>=143.4100232582479
+|	|	|	|	|	|	|--- M_WLOCNAMM>=198.75945229059155
+|	|	|	|	|	|	|	|--- M_NOA>=1293.0855706899258
+|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|	|--- M_NOPA>=797.3285014934871
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--- M_NOMNAMM>=283.7999626300445
+|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|--- M_FanIn_1>=994.3666519835929
+|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|	|--- M_NOA>=1142.339605077899
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_FanIn>=31316.216041335745
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|--- M_NOA>=54.70883771814729
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: RefusedBequest
+|--- M_TextualEntropy>=0.8835799763207207
+|	|--- M_TextualEntropy>=0.44440760693692183
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_CYCLO>=618.1099382535248
+|	|	|	|--- M_LOC>=1574.0425776256461
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--- M_LOC>=504.8694601095473
+|	|	|	|	|--- M_CYCLO>=113.0994830918141
+|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--- M_PMMM>=0.12785324063499404
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--$  Class: RefusedBequest
+|	|--- M_LOC>=3131.965462873165
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--$  Class: RefusedBequest

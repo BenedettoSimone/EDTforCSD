@@ -1,0 +1,42 @@
+========================================================================================================================================================================================================
+FITNESS 0.6045167899486283
+Accuracy score in TRAIN set: 0.7015321110592205
+Accuracy score in TEST set: 0.25422811527533484
+Precision: [0.2527115 1.       ]
+Recall: [1.         0.00271395]
+F-measure: [0.4034632  0.00541321]
+========================================================================================================================================================================================================|--- M_DIT>=1.4724106676490432
+|--- M_NOM>=367.6357081043567
+|	|--- M_TextualCohesion>=0.8750984946328711
+|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest
+|	|--- M_PMMM>=0.6610121505389251
+|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: RefusedBequest
+|--- M_CYCLO>=825.364824277182
+|	|--- M_ELOC>=5409.709826302449
+|	|	|--$  Class: NOT RefusedBequest
+|	|	|--- M_NOMNAMM>=134.0598848943335
+|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|--- M_CBO>=29.587306459888
+|	|	|--- M_NOMNAMM>=11.922698636692283
+|	|	|	|--- M_DIT>=1.4937937303599709
+|	|	|	|	|--- M_WLOCNAMM>=238.5846485523061
+|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|--- M_LOC>=3454.8465453633603
+|	|	|	|	|	|	|--- M_FanIn>=26655.335030362894
+|	|	|	|	|	|	|	|--- M_TextualEntropy>=0.10453642705974367
+|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|--- M_TextualEntropy>=0.7023027679034425
+|	|	|	|	|	|	|	|--- M_LCOM>=48347.1734620581
+|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|	|--$  Class: NOT RefusedBequest
+|	|	|	|	|	|	|	|--- M_TextualCohesion>=0.05513504685322079
+|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|	|--$  Class: RefusedBequest
+|	|	|	|--$  Class: RefusedBequest
+|	|	|--$  Class: NOT RefusedBequest

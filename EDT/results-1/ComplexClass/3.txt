@@ -1,0 +1,48 @@
+========================================================================================================================================================================================================
+FITNESS 0.8071325719960278
+Accuracy score in TRAIN set: 0.9061945171677048
+Accuracy score in TEST set: 0.990934920849682
+Precision: [0.99119718 0.71428571]
+Recall: [0.99972681 0.07142857]
+F-measure: [0.99544373 0.12987013]
+========================================================================================================================================================================================================|--- M_WMC>=183.15193012228235
+|--- M_CYCLO>=1283.2812431673583
+|	|--- M_TextualCohesion>=0.9087489752350039
+|	|	|--$  Class: NOT ComplexClass
+|	|	|--$  Class: ComplexClass
+|	|--- M_NOM>=347.97695541881166
+|	|	|--- M_FanIn>=18262.165300591958
+|	|	|	|--- M_WMC>=610.6192636444927
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|--$  Class: ComplexClass
+|	|	|--- M_NOPA>=367.77465100257825
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: ComplexClass
+|--- M_LCOM>=70365.08303828584
+|	|--- M_WMCNAMM>=0.0
+|	|	|--- M_FanIn_1>=1111.3377826412595
+|	|	|	|--- M_LOC>=5027.198515787684
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--$  Class: ComplexClass
+|	|--- M_TextualCohesion>=0.18238593852644036
+|	|	|--- M_LOC>=2855.16210014571
+|	|	|	|--- M_CBO>=32.29748430225351
+|	|	|	|	|--- M_WMCNAMM>=0.0
+|	|	|	|	|	|--- M_TextualEntropy>=0.48121889997733636
+|	|	|	|	|	|	|--- M_TextualEntropy>=0.36228250473064044
+|	|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|	|--- M_ELOC>=3462.7063645262956
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|	|--- M_TextualCohesion>=0.09064367223888425
+|	|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|	|--- M_LOC>=2206.2537450547397
+|	|	|	|	|	|--$  Class: ComplexClass
+|	|	|	|	|	|--$  Class: NOT ComplexClass
+|	|	|	|--$  Class: NOT ComplexClass
+|	|	|--$  Class: NOT ComplexClass

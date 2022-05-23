@@ -1,0 +1,42 @@
+========================================================================================================================================================================================================
+FITNESS 0.605457300483676
+Accuracy score in TRAIN set: 0.7125831318016929
+Accuracy score in TEST set: 0.9615748883777567
+Precision: [0.96435859 0.45      ]
+Recall: [0.9969062  0.06428571]
+F-measure: [0.98036233 0.1125    ]
+========================================================================================================================================================================================================|--- M_LCOM>=40037.667536085115
+|--- M_LOC>=2420.650833201217
+|	|--- M_FanIn_1>=744.9357860625753
+|	|	|--$  Class: SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_FanIn_1>=1355.1086653925743
+|	|	|--- M_LOCNAMM>=1320.6384422564663
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|--- M_CBO>=86.09083836224798
+|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|--- M_NOA>=498.18710515879417
+|	|	|	|	|--- M_LOCNAMM>=1749.5051883056856
+|	|	|	|	|	|--- M_NOMNAMM>=115.08859196543027
+|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|--- M_LOCNAMM>=1936.6281491414218
+|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|--- M_DIT>=1.7732740248767995
+|	|	|	|	|	|	|	|	|--- M_NOMNAMM>=298.63143055437575
+|	|	|	|	|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|	|--$  Class: NOT SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|--- M_TextualCohesion>=0.34353614960186807
+|	|--- M_LCOM>=34936.54779974213
+|	|	|--$  Class: SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
+|	|--- M_LOC>=455.1614384374632
+|	|	|--- M_TextualCohesion>=0.7548654351967959
+|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|--- M_NOA>=418.92893520825044
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|	|	|--$  Class: SpaghettiCode
+|	|	|--$  Class: NOT SpaghettiCode
